@@ -41,10 +41,10 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="courses.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jurusan</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="<?php echo base_url() ?>Jurusan/tkj">TKJ</a>
-                <a class="dropdown-item" href="courses.html">Akutansi</a>
-                <a class="dropdown-item" href="courses.html">Pemasaran</a>
-                <a class="dropdown-item" href="courses.html">Adm.Perkantoran</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/tkj">TKJ</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/ak">Akutansi</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/pm">Pemasaran</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/ap">Adm.Perkantoran</a>
               </div>
             </li>
             <li class="nav-item dropdown">

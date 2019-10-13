@@ -18,4 +18,26 @@ class Jurusan extends CI_Controller
         $this->load->view('Jurusan/tampilan_jurusan', $isi);
         $this->load->view('footer');
     }
+
+    public function ak()
+    {
+        $isi['content'] = 'Jurusan/ak';
+        $this->load->view('header');
+        $this->load->view('Jurusan/tampilan_jurusan', $isi);
+        $this->load->view('footer');
+    }
+    public function ap()
+    {
+        $isi['content'] = 'Jurusan/ap';
+        $this->load->view('header');
+        $this->load->view('Jurusan/tampilan_jurusan', $isi);
+        $this->load->view('footer');
+    }
+    public function pm()
+    {
+        $isi['content'] = 'Jurusan/pm';
+        $this->load->view('header');
+        $this->load->view('Jurusan/tampilan_jurusan', $isi);
+        $this->load->view('footer');
+    }
 }
