@@ -7,6 +7,7 @@ class Kurikulum extends CI_Controller
 
     public function index()
     {
+        $this->Model_keamanan->getKeamanan();
         $isi['content'] = 'Admin/Kurikulum/tampilan_content';
         $this->load->view('Admin/Kurikulum/tampilan_kurikulum', $isi);
         $this->load->view('Admin/tampilan_footer');
@@ -24,5 +25,11 @@ class Kurikulum extends CI_Controller
         $isi['data'] = $this->Model_siswa->data();
         $this->load->view('Admin/Kurikulum/tampilan_kurikulum', $isi);
         $this->load->view('Admin/tampilan_footer');
+    }
+
+    public function logout()
+    {
+        $this->session->sess_destroy();
+        redirect('/Login');
     }
 }
