@@ -1,7 +1,7 @@
 <div class="card mb-3">
     <div class="card-header">
-        <i class="fas fa-table"></i>
-        Data Guru</div>
+        <h5 class="fas fa-table"> Data Siswa</h5>
+    </div>
     <div class="card-body">
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

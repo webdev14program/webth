@@ -18,6 +18,8 @@ class Model_kurikulum extends CI_Model
         return $query->row()->siswa;
     }
 
+
+
     public function tkj()
     {
         $sql = "SELECT COUNT(*) AS 'tkj' FROM `siswa` WHERE jurusan='Teknik Komputer dan Jaringan'";
@@ -30,5 +32,18 @@ class Model_kurikulum extends CI_Model
         $sql = "SELECT COUNT(*) AS 'pm' FROM `siswa` WHERE jurusan='Pemasaran'";
         $query = $this->db->query($sql);
         return $query->row()->pm;
+    }
+
+    public function ak()
+    {
+        $sql = "SELECT COUNT(*) AS 'ak' FROM `siswa` where jurusan='Akutansi'";
+        $query = $this->db->query($sql);
+        return $query->row()->ak;
+    }
+    public function ap()
+    {
+        $sql = "SELECT COUNT(*) AS 'ap' FROM `siswa` WHERE jurusan='Administrasi Perkantoran'";
+        $query = $this->db->query($sql);
+        return $query->row()->ap;
     }
 }

@@ -17,7 +17,7 @@
             <span>Data Siswa</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="<?= base_url() ?>Kurikulum/Walikelas">
+        <a class="nav-link" href="<?= base_url() ?>Kurikulum/walikelas">
             <i class="fas fa-fw fa-table"></i>
             <span>Data Walikelas</span></a>
     </li>

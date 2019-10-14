@@ -12,6 +12,8 @@ class Kurikulum extends CI_Controller
         $isi['siswa'] =  $this->Model_kurikulum->siswa();
         $isi['tkj'] =  $this->Model_kurikulum->tkj();
         $isi['pm'] =  $this->Model_kurikulum->pm();
+        $isi['ak'] =  $this->Model_kurikulum->ak();
+        $isi['ap'] =  $this->Model_kurikulum->ap();
         $isi['content'] = 'Admin/Kurikulum/tampilan_content';
         $this->load->view('Admin/Kurikulum/tampilan_kurikulum', $isi);
         $this->load->view('Admin/tampilan_footer');
@@ -27,6 +29,14 @@ class Kurikulum extends CI_Controller
     {
         $isi['content'] = 'Admin/Kurikulum/tampilan_siswa';
         $isi['data'] = $this->Model_siswa->data();
+        $this->load->view('Admin/Kurikulum/tampilan_kurikulum', $isi);
+        $this->load->view('Admin/tampilan_footer');
+    }
+
+    public function walikelas()
+    {
+        $isi['content'] = 'Admin/Kurikulum/tampilan_walikelas';
+        $isi['data'] = $this->Model_walikelas->data();
         $this->load->view('Admin/Kurikulum/tampilan_kurikulum', $isi);
         $this->load->view('Admin/tampilan_footer');
     }
