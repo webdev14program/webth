@@ -8,6 +8,10 @@ class Kurikulum extends CI_Controller
     public function index()
     {
         $this->Model_keamanan->getKeamanan();
+        $isi['guru'] =  $this->Model_kurikulum->guru();
+        $isi['siswa'] =  $this->Model_kurikulum->siswa();
+        $isi['tkj'] =  $this->Model_kurikulum->tkj();
+        $isi['pm'] =  $this->Model_kurikulum->pm();
         $isi['content'] = 'Admin/Kurikulum/tampilan_content';
         $this->load->view('Admin/Kurikulum/tampilan_kurikulum', $isi);
         $this->load->view('Admin/tampilan_footer');

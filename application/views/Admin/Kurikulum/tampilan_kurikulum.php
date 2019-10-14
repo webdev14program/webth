@@ -66,7 +66,59 @@
                 <ol class="breadcrumb  bg-success text-white">
                     <h5>Admin SMK Tunas Harapan Version 1.0</h5>
                 </ol>
+                <div class="row">
+                    <div class="col-md mt-4">
+                        <div class="card bg-primary text-white">
+                            <div class="card-body">
+                                <h4>Jumlah Guru</h4>
+                                <h4><?= $guru ?> Guru</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4">
+                        <div class="card bg-warning text-white">
+                            <div class="card-body">
+                                <h4>Jumlah Siswa</h4>
+                                <h4><?= $siswa ?> Siswa</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="col-md mt-4">
+                        <div class="card bg-primary text-white">
+                            <div class="card-body">
+                                <h4>Jumlah Siswa TKJ</h4>
+                                <h4><?= $tkj ?> Siswa</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4">
+                        <div class="card bg-warning text-white">
+                            <div class="card-body">
+                                <h4>Jumlah Siswa PM</h4>
+                                <h4><?= $pm ?> Siswa</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4">
+                        <div class="card bg-warning text-white">
+                            <div class="card-body">
+                                <h4>Jumlah Siswa</h4>
+                                <h4><?= $siswa ?> Siswa</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4">
+                        <div class="card bg-warning text-white">
+                            <div class="card-body">
+                                <h4>Jumlah Siswa</h4>
+                                <h4><?= $siswa ?> Siswa</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Icon Cards-->
 
                 <?php $this->load->view($content); ?>
