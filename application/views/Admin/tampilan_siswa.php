@@ -27,7 +27,7 @@
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-        <a class="navbar-brand mr-1" href="index.html">Administrator</a>
+        <a class="navbar-brand mr-1" href="index.html">Siswa</a>
 
         <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
             <i class="fas fa-bars"></i>
@@ -56,7 +56,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <?php $this->load->view('Admin/tampilan_sidebar'); ?>
+        <?php $this->load->view('Admin/Siswa/tampilan_sidebar_siswa'); ?>
 
         <div id="content-wrapper">
 
@@ -69,7 +69,7 @@
 
                 <!-- Icon Cards-->
 
-                <?php $this->load->view($content) ?>
+                <!-- <?php $this->load->view($content); ?> -->
 
 
 
@@ -100,7 +100,7 @@
                     <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="<?= base_url() ?>Administrator/logout">Logout</a>
+                        <a class="btn btn-primary" href="<?= base_url() ?>Dashboard/logout">Logout</a>
                     </div>
                 </div>
             </div>

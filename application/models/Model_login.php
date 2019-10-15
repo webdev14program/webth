@@ -19,7 +19,7 @@ class Model_login extends CI_Model
                 $this->session->set_userdata($sess);
                 // redirect('Dashboard');
                 if ($this->session->userdata("level") == "1") {
-                    redirect('Dashboard');
+                    redirect('Administrator');
                 } elseif ($this->session->userdata("level") == "2") {
                     redirect('Kurikulum');
                 } elseif ($this->session->userdata("level") == "4") {
