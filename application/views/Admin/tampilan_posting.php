@@ -16,7 +16,7 @@
                 <label for="exampleFormControlFile1">Posting Gambar</label>
                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
             </div>
-            <button type="submint" class="btn btn-primary"> SIMPAN</button>
+            <button type="submint" class="btn btn-primary"> SIMPAN x</button>
         </form>
     </div>
 </div>
