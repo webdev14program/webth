@@ -37,7 +37,10 @@
             <h2>Welcome to SMK Tunas Harapan Jakarta Barat</h2>
           </div>
           <div class="text mb-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quibusdam nisi eos accusantium eligendi velit deleniti nihil ad deserunt rerum incidunt nulla nemo eius molestiae architecto beatae asperiores doloribus animi.</p>
+            <p>SMK Tunas Harapan berdiri sejak tahun 1990 dahulu bernama SMEA dimana jurusan keahlian (setara sekolah menengah) hanya Bisnis Management ( Akuntantansi, Pemasaran dan Administrasi perkantoran).
+            sejak tahun 2013 terdapat jurusan baru dari bidang Teknologi (Teknik Komputer dan Jaringan). Berbagai prestasi dari Bidang Olahraga, Kesenian, Sastra hingga Mata Pelajaran Produktif(Lomba Kompetensi Siswa) sudah diraih oleh SMK Tunas Harapan.
+            Prestasi ini bukan akhir tetapi melainkan awal untuk menciptakan Teknis Pendidikan berbasis Praktek dan Kerja Industri (sesuai Jurusan) yang inovatif dan kreatif. SMK Tunas Harapan sudah menjalankan
+            Program Teaching Factory, Bursa Kerja dan Lembaga Sertifikasi Profesi berstandart BNSP. Program ini dikhususkan untuk meningkatkan kualitas kegiatan pembelajaran dan pencarian lapangan kerja berbasis jurusan masing - masing.</p>
           </div>
 
 
@@ -59,7 +62,8 @@
           <div class="icon mb-3"><span class="flaticon-book text-center"></span></div>
           <div class="media-body">
             <h3 class="heading">Teknik Komputer dan Jaringan</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit mess.</p>
+            <p>Program Keahlian Teknik Komputer dan Jaringan adalah Jurusan berbasis Teknisi Komputer hingga Network Administrator. Program Keahlian TKJ sudah melaksanakan Program Teaching Factory, dimana Kegiatan belajar dan mengajar mengikuti
+            perusahaan/ industri bidang Teknologi dan Informasi dan memiliki standart Pendidikan berkaitan dengan Lembaga Sertifikasi Profesi BNSP. </p>
             <p><a href="#" class="more">Read More <span class="ion-arrow-right-c"></span></a></p>
           </div>
         </div>
@@ -68,8 +72,8 @@
         <div class="media block-6 d-block">
           <div class="icon mb-3"><span class="flaticon-book"></span></div>
           <div class="media-body">
-            <h3 class="heading">Akutansi</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit mess.</p>
+            <h3 class="heading">Akutansi Keuangan Lembaga</h3>
+            <p>Program Keahlian Akuntansi Keuangan Lembaga atau dahulu bernama Akuntansi adalah Jurusan berbasis Teknik Perhitungan Sistem Keuangan untuk lembaga. AKL memiliki program Lembaga Sertifikasi Profesi berstandart BNSP.  </p>
             <p><a href="#" class="more">Read More <span class="ion-arrow-right-c"></span></a></p>
           </div>
         </div>
@@ -79,8 +83,8 @@
         <div class="media block-6 d-block">
           <div class="icon mb-3"><span class="flaticon-book"></span></div>
           <div class="media-body">
-            <h3 class="heading">Pemasaran</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit mess.</p>
+            <h3 class="heading">Bisnis Daring</h3>
+            <p>Program Keahlian Bisnis Daring dahulu bernama Pemasaran adalah jurusan yang berbasis Sistem Marketing Perusahaan dan Marketing Online. Bisnis Daring memiliki program Lembaga Sertifkasi Profesi berstandart BNSP. </p>
             <p><a href="#" class="more">Read More <span class="ion-arrow-right-c"></span></a></p>
           </div>
         </div>
@@ -89,7 +93,7 @@
         <div class="media block-6 d-block">
           <div class="icon mb-3"><span class="flaticon-book"></span></div>
           <div class="media-body">
-            <h3 class="heading">Administrasi Perkantoran</h3>
+            <h3 class="heading">Otomasi </h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit mess.</p>
             <p><a href="#" class="more">Read More <span class="ion-arrow-right-c"></span></a></p>
           </div>
