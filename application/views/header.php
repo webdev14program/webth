@@ -21,7 +21,7 @@
   <!-- Theme Style -->
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
 </head>
-
+   
 <body class="bg-light">
 
   <header role="banner">

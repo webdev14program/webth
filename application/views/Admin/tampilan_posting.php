@@ -1,5 +1,5 @@
 <div class="card">
-    <div class="card-header  bg-primary text-white">
+    <div class="card-header  bg-light ">
         <h5>Posting</h5>
     </div>
     <div class="card-body">
