@@ -7,8 +7,11 @@ class Home extends CI_Controller
 
         public function index()
         {
+                $isi['siswa'] =  $this->Model_kurikulum->siswa();
+                $isi['alumni'] =  $this->Model_kurikulum->alumni();
                 $this->load->view('header');
-                $this->load->view('tampilan_home');
+                $this->load->view('tampilan_home',$isi);
                 $this->load->view('footer');
         }
 }
+ 

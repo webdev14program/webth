@@ -127,7 +127,7 @@
                 <span class="flaticon-student"></span>
               </div>
               <div class="text">
-                <strong class="number" data-number="12921">0</strong>
+                <strong class="number" data-number="<?= $siswa?>">0</strong>
                 <span>Siswa</span>
               </div>
             </div>
@@ -138,7 +138,7 @@
                 <span class="flaticon-mortarboard"></span>
               </div>
               <div class="text">
-                <strong class="number" data-number="3902">0</strong>
+                <strong class="number" data-number="<?= $alumni?>">0</strong>
                 <span>Alumni </span>
               </div>
             </div>

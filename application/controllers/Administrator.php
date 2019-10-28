@@ -3,13 +3,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Administrator extends CI_Controller
 {
-
+ 
 
     public function index()
     {
         $this->Model_keamanan->getKeamanan();
         $isi['guru'] =  $this->Model_kurikulum->guru();
         $isi['siswa'] =  $this->Model_kurikulum->siswa();
+        $isi['alumni'] =  $this->Model_kurikulum->alumni();
         $isi['tkj'] =  $this->Model_kurikulum->tkj();
         $isi['pm'] =  $this->Model_kurikulum->pm();
         $isi['ak'] =  $this->Model_kurikulum->ak();
