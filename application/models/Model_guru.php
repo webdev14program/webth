@@ -9,4 +9,8 @@ class Model_guru extends CI_Model
         $query = $this->db->query($sql);
         return $query->result_array();
     }
+    public function detail($id)
+    {
+        return $this->db->get_where('guru', ['id' => $id])->row_array();
+    }
 }

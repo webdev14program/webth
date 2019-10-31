@@ -1,3 +1,14 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-success">
+        <li class="breadcrumb-item text-white">
+            <h5><?= $menu ?></h5>
+        </li>
+        <!-- <li class="breadcrumb-item active" aria-current="page">
+                            <h5></h5>
+                        </li> -->
+    </ol>
+</nav>
+
 <div class="row">
     <div class="col-md mt-4">
         <div class="card bg-primary text-white">

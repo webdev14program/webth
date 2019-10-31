@@ -3,11 +3,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Administrator extends CI_Controller
 {
- 
+
 
     public function index()
     {
         $this->Model_keamanan->getKeamanan();
+        $isi['menu'] = 'Admin SMK Tunas Harapan Version 1.0';
         $isi['guru'] =  $this->Model_kurikulum->guru();
         $isi['siswa'] =  $this->Model_kurikulum->siswa();
         $isi['alumni'] =  $this->Model_kurikulum->alumni();
@@ -21,8 +22,18 @@ class Administrator extends CI_Controller
     }
     public function guru()
     {
-        $isi['content'] = 'Admin/Kurikulum/tampilan_guru';
+        $isi['menu'] = 'Data Guru';
+        $isi['submenu'] = 'coba';
+        $isi['content'] = 'Admin/tampilan_guru';
         $isi['data'] = $this->Model_guru->data();
+        $this->load->view('Admin/tampilan_dashboard', $isi);
+        $this->load->view('Admin/tampilan_footer');
+    }
+
+    public function detail_guru($id)
+    {
+        $isi['content'] = 'Admin/detail_guru';
+        $isi['data'] = $this->Model_guru->detail($id);
         $this->load->view('Admin/tampilan_dashboard', $isi);
         $this->load->view('Admin/tampilan_footer');
     }
