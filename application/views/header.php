@@ -17,11 +17,11 @@
   <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/magnific-popup.css">
-
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- Theme Style -->
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
 </head>
-   
+
 <body class="bg-light">
 
   <header role="banner">

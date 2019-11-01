@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SMK Tunas Harapan-JakBar</title>
+    <title>Siakad SMK Tunas Harapan</title>
     <link rel="icon" href="<?= base_url() ?>assets/images/logo.png">
 
     <!-- Custom fonts for this template-->

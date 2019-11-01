@@ -23,7 +23,7 @@ class Administrator extends CI_Controller
     public function guru()
     {
         $isi['menu'] = 'Data Guru';
-        $isi['submenu'] = 'coba';
+        $isi['submenu'] = '';
         $isi['content'] = 'Admin/tampilan_guru';
         $isi['data'] = $this->Model_guru->data();
         $this->load->view('Admin/tampilan_dashboard', $isi);
@@ -32,6 +32,8 @@ class Administrator extends CI_Controller
 
     public function detail_guru($id)
     {
+        $isi['menu'] = 'Data Guru';
+        $isi['submenu'] = 'Detail';
         $isi['content'] = 'Admin/detail_guru';
         $isi['data'] = $this->Model_guru->detail($id);
         $this->load->view('Admin/tampilan_dashboard', $isi);
