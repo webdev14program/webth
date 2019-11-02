@@ -17,7 +17,12 @@
   <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/magnific-popup.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Icon Ion -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" /> -->
+  <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@4.7.4/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@4.7.4/dist/ionicons/ionicons.js"></script> -->
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <!-- Theme Style -->
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
 </head>
