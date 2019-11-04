@@ -55,12 +55,12 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teachers</a>
               <div class="dropdown-menu" aria-labelledby="dropdown05">
-                <a class="dropdown-item" href="#">TKJ</a>
-                <a class="dropdown-item" href="#">Akutansi</a>
-                <a class="dropdown-item" href="#">Pemasaran</a>
-                <a class="dropdown-item" href="#">Adm.Perkantoran</a>
-                <a class="dropdown-item" href="#">Mapel Kel. A</a>
-                <a class="dropdown-item" href="#">Mapel Kel. B</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/TKJ">TKJ</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/AK">Akutansi</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/PM">Pemasaran</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/AP">Adm.Perkantoran</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/Umum">Umum</a>
+                <!-- <a class="dropdown-item" href="#">Mapel Kel. B</a> -->
               </div>
 
             </li>

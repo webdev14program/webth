@@ -7,7 +7,6 @@
 
                 <div class="mb-5 element-animate">
                     <h1 class="mb-2">Contact Us</h1>
-                    <p class="bcrumb"><a href="index.html">Home</a> <span class="sep ion-android-arrow-dropright px-2"></span> <span class="current">Contact Us</span></p>
                 </div>
 
             </div>
