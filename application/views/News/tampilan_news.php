@@ -26,78 +26,57 @@
   </div>
 </div> -->
 
-
-<div class="site-section bg-light">
-  <div class="container">
-    <div class="row">
-      <?php $this->load->view($content); ?>
-      <!-- END content -->
-      <div class="col-md-6 col-lg-4 order-md-1">
-
-        <div class="block-24 mb-5">
-          <h3 class="heading">Categories</h3>
-          <ul>
-            <li><a href="#">News <span>10</span></a></li>
-            <li><a href="#">Photo <span>43</span></a></li>
-            <li><a href="#">Video <span>21</span></a></li>
-            <!-- <li><a href="#">Python <span>65</span></a></li>
-            <li><a href="#">iOS <span>34</span></a></li>
-            <li><a href="#">Android <span>45</span></a></li>
-            <li><a href="#">Swift <span>22</span></a></li> -->
-          </ul>
-        </div>
-
-        <div class="block-25 mb-5">
-          <div class="heading">Recent Post</div>
-          <ul>
-            <li>
-              <a href="#" class="d-flex">
-                <figure class="image mr-3">
-                  <img src="images/img_2_b.jpg" alt="" class="img-fluid">
-                </figure>
-                <div class="text">
-                  <h3 class="heading">Create cool websites using this template</h3>
-                  <span class="meta">$34</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="d-flex">
-                <figure class="image mr-3">
-                  <img src="images/img_2_b.jpg" alt="" class="img-fluid">
-                </figure>
-                <div class="text">
-                  <h3 class="heading">Create cool websites using this template</h3>
-                  <span class="meta">$34</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="d-flex">
-                <figure class="image mr-3">
-                  <img src="images/img_2_b.jpg" alt="" class="img-fluid">
-                </figure>
-                <div class="text">
-                  <h3 class="heading">Create cool websites using this template</h3>
-                  <span class="meta">$34</span>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mt-4 shadow">
+      <div class="alert alert-light" role="alert">
+        A simple light alert—check it out!
       </div>
-      <!-- END Sidebar -->
+    </div>
+    <div class="col-md-8 mt-4 shadow">
+      <div class="card">
+        <div class="card-header">
+          <h4></h4>
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <!-- <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead> -->
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 
-
 <div class="py-5 block-22">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6 mb-4 mb-md-0 pr-md-5">
+      <div class="col-md-6 mb-4 mb-md-0 pr-md-5 ">
         <h2 class="heading">Create cool websites</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusantium optio und.</p>
       </div>
