@@ -29,7 +29,7 @@
                         <li><span class="icon ion-android-pin"></span><span class="text">SMK Tunas Harapan
                                 Komplek BNI 46, Jelambar, Grogol Petamburan, RT.2/RW.4, Wijaya Kusuma, Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11460</span></li>
                         <li><a href="#"><span class="icon ion-ios-telephone"></span><span class="text">(021) 5662306</span></a></li>
-                        <li><a href="mailto:smktunhar@yahoo.com"><span class="icon ion-ios-mail"></span><span class="text">smktunhar@yahoo.com</span></a></li>
+                        <li><a href="mailto:smktunhar@yahoo.com"><span class="icon ion-ios-mail"></span><span class="text">admin@smkth-jakbar.com</span></a></li>
                         <li><a href="https://www.instagram.com/ruangsastrasmkth/"><span class="icon ion-logo-instagram"></span><span class="text">Instagram</span></a></li>
                     </ul>
                 </div>

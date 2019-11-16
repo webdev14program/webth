@@ -28,46 +28,44 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-4 mt-4 shadow">
-      <div class="alert alert-light" role="alert">
-        A simple light alert—check it out!
-      </div>
-    </div>
-    <div class="col-md-8 mt-4 shadow">
+    <div class="col-md-4 mt-4">
+      <!--  -->
+
       <div class="card">
         <div class="card-header">
-          <h4></h4>
+          <h5>Menu</h5>
         </div>
         <div class="card-body">
-          <table class="table">
-            <!-- <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead> -->
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-
-              </tr>
-            </tbody>
-          </table>
+          <div class="alert alert-light" role="alert">
+            <ul>
+              <li>News</li>
+              <li>Photo</li>
+              <li>Video</li>
+            </ul>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="col-md-8 shadow">
+
+      <?php foreach ($data as $row) : ?>
+        <div class="row">
+          <div class="col-md mt-4">
+            <div class="card">
+              <div class="card-header">
+                <h4><?= $row['judul'] ?></h4>
+              </div>
+              <div class="card-body">
+                <h5 class="text-justify"><?= $row['isi'] ?></h5>
+                <p class="text-right"><?= $row['date'] ?></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <?php endforeach; ?><br>
+      <?= $this->pagination->create_links(); ?>
     </div>
   </div>
 </div>
