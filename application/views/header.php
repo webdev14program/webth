@@ -18,6 +18,21 @@
   <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/magnific-popup.css">
 
+  <!-- Google Font -->
+
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+  <style>
+    h2.text-popular {
+      font-family: 'Lobster', cursive;
+    }
+
+    h5.text-footer {
+      font-family: 'Roboto Slab', serif;
+    }
+  </style>
+
   <!-- Icon Ion -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" /> -->
   <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@4.7.4/dist/ionicons/ionicons.esm.js"></script>
@@ -65,7 +80,7 @@
 
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?= base_url() ?>News">News</a>
+              <a class="nav-link" href="<?= base_url() ?>News/AllPosting">News</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>About">About</a>
@@ -73,6 +88,12 @@
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>Contact">Contact</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li> -->
           </ul>
           <ul class="navbar-nav absolute-right">
             <li>

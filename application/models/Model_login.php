@@ -23,7 +23,7 @@ class Model_login extends CI_Model
                 } elseif ($this->session->userdata("level") == "2") {
                     redirect('Kurikulum');
                 } elseif ($this->session->userdata("level") == "4") {
-                    redirect('Dashboard/Siswa');
+                    redirect('Siswa');
                 }
             }
         } else {

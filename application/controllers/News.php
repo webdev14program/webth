@@ -5,11 +5,11 @@ class News extends CI_Controller
 {
 
 
-	public function index()
+	public function AllPosting()
 	{
 
 
-		$config['base_url'] = 'http://localhost:8123/webth/News/';
+		$config['base_url'] = 'http://localhost/webth/News/Allposting';
 		$config['total_rows'] = $this->Model_news->count();
 		$config['per_page'] = 3;
 
@@ -46,9 +46,10 @@ class News extends CI_Controller
 		$isi['data'] = $this->Model_news->data($config['per_page'], $isi['start']);
 
 
-		$isi['content'] = 'News/tampilan_photo';
+		$isi['content'] = 'Posting/news';
+		$isi['posting'] = 'Our Posting';
 		$this->load->view('header');
-		$this->load->view('News/tampilan_news', $isi);
+		$this->load->view('Posting/tampilan_news', $isi);
 		$this->load->view('footer');
 	}
 }

@@ -20,14 +20,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md mt-4">
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-header">
                         <h3>Visi</h3>
                     </div>
                     <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <h5 class="text-bold">Menjadi Lembaga pendidikan yang tamatannya berahklak mulia, terampil pada bidangnya dan siap kerja.</h5>
-                        </blockquote>
+                        <h3 class="text-bold">Menjadi Lembaga pendidikan yang tamatannya berahklak mulia, terampil pada bidangnya dan siap kerja.</h3>
                     </div>
                 </div>
             </div>

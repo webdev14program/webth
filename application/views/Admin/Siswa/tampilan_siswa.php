@@ -64,12 +64,12 @@
 
                 <!-- Breadcrumbs-->
                 <ol class="breadcrumb  bg-success text-white">
-                    <h5>Admin SMK Tunas Harapan Version 1.0</h5>
+                    <h5><?= $menu ?></h5>
                 </ol>
 
                 <!-- Icon Cards-->
 
-                <!-- <?php $this->load->view($content); ?> -->
+                <?php $this->load->view($content); ?>
 
 
 

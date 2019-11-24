@@ -1,10 +1,10 @@
-<section class="site-hero site-sm-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(assets/images/1.jpg);">
+<section class="site-hero site-sm-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(<?= base_url() ?>assets/images/1.jpg);">
   <div class="container">
     <div class="row align-items-center justify-content-center site-hero-sm-inner">
       <div class="col-md-7 text-center">
 
         <div class="mb-5 element-animate">
-          <h1 class="mb-2">Our News</h1>
+          <h1 class="mb-2"><?= $posting ?></h1>
         </div>
 
       </div>
@@ -36,37 +36,33 @@
           <h5>Menu</h5>
         </div>
         <div class="card-body">
-          <div class="alert alert-light" role="alert">
-            <ul>
-              <li>News</li>
-              <li>Photo</li>
-              <li>Video</li>
-            </ul>
+          <!-- <ul>
+            <li class="">
+              <h4 class="btn btn-success text-white rounded-pill">News</h4>
+            </li>
+            <li>
+              <h4 class="btn btn-success text-white rounded-pill">Photo</h4>
+            </li>
+            <li>
+              <h4 class="btn btn-success text-white rounded-pill">Video</h4>
+            </li>
+          </ul> -->
+
+          <div class="row">
+            <div class="col">
+              <h4 class="btn btn-success text-white rounded-pill">News</h4>
+            </div>
+            <div class="col">
+              <h4 class="btn btn-success text-white rounded-pill">Photo</h4>
+            </div>
+            <div class="col">
+              <h4 class="btn btn-success text-white rounded-pill">Video</h4>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-md-8 shadow">
-
-      <?php foreach ($data as $row) : ?>
-        <div class="row">
-          <div class="col-md mt-4">
-            <div class="card">
-              <div class="card-header">
-                <h4><?= $row['judul'] ?></h4>
-              </div>
-              <div class="card-body">
-                <h5 class="text-justify"><?= $row['isi'] ?></h5>
-                <p class="text-right"><?= $row['date'] ?></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      <?php endforeach; ?><br>
-      <?= $this->pagination->create_links(); ?>
-    </div>
+    <?php $this->load->view($content); ?>
   </div>
 </div>
 
