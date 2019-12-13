@@ -58,6 +58,9 @@
             <li class="nav-item">
               <a class="nav-link active" href="<?= base_url() ?>">Home</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">TEFA</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="courses.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jurusan</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">

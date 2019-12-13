@@ -92,7 +92,7 @@
                         <h6>Nomor Telpon : 021 5662306</h6>
                     </li>
                     <li>
-                        <h6>Email : smktunhar@yahoo.com</h6>
+                        <h6>Email : admin@smkth-jakbar.com</h6>
                     </li>
                 </ul>
             </div>
@@ -119,9 +119,14 @@
                         <h6>Versi Database : Maria DB 10.2</h6>
                     </li>
                     <li>
-                        <h6>Portal Web CBT Try-Out : <a href="http://ujiancbt.webdev14program.com">http://ujiancbt.webdev14program.com</a></h6>
+                        <h6>Portal Web CBT Try-Out : <a href="https://ujiancbt.webdev14program.com">http://ujiancbt.webdev14program.com</a></h6>
                     </li>
-
+                    <li>
+                        <h6>Portal Web Absensi : <a href="https://absenth.smkth-jakbar.com/">http://absenth.smkth-jakbar.com/</a></h6>
+                    </li>
+                    <li>
+                        <h6>Portal Web Materi Online : <a href="https://www.cimeriestehcno.com/">https://www.cimeriestehcno.com/</a></h6>
+                    </li>
                 </ul>
             </div>
         </div>
