@@ -25,7 +25,7 @@
                         <h3>Visi</h3>
                     </div>
                     <div class="card-body">
-                        <h3 class="text-bold">Menjadi Lembaga pendidikan yang tamatannya berahklak mulia, terampil pada bidangnya dan siap kerja.</h3>
+                        <h4 class="text-justify">Menjadi Sekolah Unggulan di Jakarta Barat yang tamatan nya berakhlak mulia, terampil dalam berkarya, mandiri, berjiwa Pancasila dan mampu bersaing di Era Perdagangan bebas serta Revolosi Industri 4.0 </h4>
                     </div>
                 </div>
             </div>
@@ -39,11 +39,12 @@
                         <blockquote class="blockquote mb-0">
                             <h6>
                                 <ol>
-                                    <li>Meningkatkan imam dan taqwa</li>
-                                    <li>Mengembangkan dan melaksanakan proses pendidikan dan pelatihan melalui pembelajaran yang berkualitas.</li>
-                                    <li>Meningkatkan kuantitas dan kualitas sarana pendidikan.</li>
-                                    <li>Meningkatkan profosionalisme tenaga kependidikan.</li>
+                                    <li>Memeningkatkan keimanan dan ketaqwaan melalui pengamalan ajaran agama</li>
+                                    <li>Meningkatkan kwalitas pendidik dan layanan pendidikan</li>
+                                    <li>Meningkatkan kwalitas sumber daya manusia yang unggul.</li>
+                                    <li>Meningkatkan kwalitas sarana dan prasarana pendidikan</li>
                                     <li>Meningkatkan kesejahteraan tenaga kependidikan sesuai dengan kemampuan.</li>
+                                    <li>Meningkatkan kesejahteraan tenaga kependidikan sesuai kemampuan</li>
                                 </ol>
                             </h6>
                         </blockquote>

@@ -107,13 +107,37 @@ class Administrator extends CI_Controller
     public function posting()
     {
         $this->Model_keamanan->getKeamanan();
-        $isi['content'] = 'Admin/tampilan_posting';
+        $isi['content'] = 'Admin/posting/tampilan_posting';
         $this->load->view('Admin/tampilan_dashboard', $isi);
         $this->load->view('Admin/tampilan_footer');
     }
 
 
+    public function upload()
+    {
+        $judul = $this->input->post('judul');
+        $isi = $this->input->post('isi');
+        $gambar = $_FILES['gambar']['name'];
+        $config['upload_path']          = './assets/upload/';
+        $config['allowed_types']        = 'gif|jpg|png|jpeg';
+        $config['overwrite']            = true;
+        $config['max_size']             = 1024;
+        $this->load->library('upload', $config);
 
+        if ($this->upload->do_upload('gambar')) {
+            $gambar = $this->upload->data("file_name");
+            redirect('Administrator');
+        }
+
+        $data = array(
+            'judul' =>  $this->input->post('judul'),
+            'isi' => $this->input->post('isi'),
+            'gambar' => $gambar
+        );
+
+        $this->db->insert('posting', $data);
+        redirect('Administrator');
+    }
 
     public function logout()
     {

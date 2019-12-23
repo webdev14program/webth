@@ -23,7 +23,7 @@ class Jurusan extends CI_Controller
     public function ak()
     {
         $isi['content'] = 'Jurusan/ak';
-        $isi['jurusan'] = 'Akutansi';
+        $isi['jurusan'] = 'Akutansi Keuangan Lembaga';
         $this->load->view('header');
         $this->load->view('Jurusan/tampilan_jurusan', $isi);
         $this->load->view('footer');
@@ -31,7 +31,7 @@ class Jurusan extends CI_Controller
     public function ap()
     {
         $isi['content'] = 'Jurusan/ap';
-        $isi['jurusan'] = 'Administrasi Perkantoran';
+        $isi['jurusan'] = 'Otomatisasi Tata Kelola Perkantoran';
         $this->load->view('header');
         $this->load->view('Jurusan/tampilan_jurusan', $isi);
         $this->load->view('footer');
@@ -39,7 +39,7 @@ class Jurusan extends CI_Controller
     public function pm()
     {
         $isi['content'] = 'Jurusan/pm';
-        $isi['jurusan'] = 'Pemasaran';
+        $isi['jurusan'] = 'Bisnis Daring dan Pemasaran';
         $this->load->view('header');
         $this->load->view('Jurusan/tampilan_jurusan', $isi);
         $this->load->view('footer');

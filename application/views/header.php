@@ -59,24 +59,24 @@
               <a class="nav-link active" href="<?= base_url() ?>">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">TEFA</a>
+              <a class="nav-link active" href="https://tefa.smkth-jakbar.com/" target="_blank">TEFA</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="courses.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jurusan</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/tkj">TKJ</a>
-                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/ak">Akutansi</a>
-                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/pm">Pemasaran</a>
-                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/ap">Adm.Perkantoran</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/tkj">Teknik Komputer dan Jaringan</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/ak">Akutansi Keuangan Lembaga</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/pm">Bisnis Daring dan Pemasaran</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/ap">Otomatisasi Tata Kelola Perkantoran</a>
               </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teachers</a>
               <div class="dropdown-menu" aria-labelledby="dropdown05">
-                <a class="dropdown-item" href="<?= base_url() ?>Guru/TKJ">TKJ</a>
-                <a class="dropdown-item" href="<?= base_url() ?>Guru/AK">Akutansi</a>
-                <a class="dropdown-item" href="<?= base_url() ?>Guru/PM">Pemasaran</a>
-                <a class="dropdown-item" href="<?= base_url() ?>Guru/AP">Adm.Perkantoran</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/TKJ">Teknik Komputer dan Jaringan</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/AK">Akutansi Keuangan Lembaga</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/PM">Bisnis Daring dan Pemasaran</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/AP">Otomatisasi Tata Kelola Perkantoran</a>
                 <a class="dropdown-item" href="<?= base_url() ?>Guru/Umum">Umum</a>
                 <!-- <a class="dropdown-item" href="#">Mapel Kel. B</a> -->
               </div>

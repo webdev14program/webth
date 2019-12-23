@@ -59,9 +59,9 @@
     <div class="row">
       <div class="col-md-6 col-lg-3">
         <div class="media block-6 d-block">
-          <div class="icon mb-3"><span class="flaticon-book text-center"></span></div>
+          <div class="icon mb-3 text-center"><span class="flaticon-book text-center"></span></div>
           <div class="media-body">
-            <h3 class="heading">Teknik Komputer dan Jaringan</h3>
+            <h3 class="heading text-center">Teknik Komputer dan Jaringan</h3>
             <p class="text-justify">Program Keahlian Teknik Komputer dan Jaringan adalah Jurusan berbasis Teknisi Komputer hingga Network Administrator. Program Keahlian TKJ sudah melaksanakan Program Teaching Factory, dimana Kegiatan belajar dan mengajar mengikuti
               perusahaan/ industri bidang Teknologi dan Informasi dan memiliki standart Pendidikan berkaitan dengan Lembaga Sertifikasi Profesi BNSP. </p>
             <p><a href="#" class="more">Read More <span class="ion-arrow-right-c"></span></a></p>
@@ -70,9 +70,9 @@
       </div>
       <div class="col-md-6 col-lg-3">
         <div class="media block-6 d-block">
-          <div class="icon mb-3"><span class="flaticon-book"></span></div>
+          <div class="icon mb-3 text-center"><span class="flaticon-book"></span></div>
           <div class="media-body">
-            <h3 class="heading">Akutansi Keuangan Lembaga</h3>
+            <h3 class="heading text-center">Akutansi Keuangan Lembaga</h3>
             <p class="text-justify">Program Keahlian Akuntansi Keuangan Lembaga atau dahulu bernama Akuntansi adalah Jurusan berbasis Teknik Perhitungan Sistem Keuangan untuk lembaga. AKL memiliki program Lembaga Sertifikasi Profesi berstandart BNSP. </p>
             <p><a href="#" class="more">Read More <span class="ion-arrow-right-c"></span></a></p>
           </div>
@@ -81,9 +81,9 @@
 
       <div class="col-md-6 col-lg-3">
         <div class="media block-6 d-block">
-          <div class="icon mb-3"><span class="flaticon-book"></span></div>
+          <div class="icon mb-3 text-center"><span class="flaticon-book"></span></div>
           <div class="media-body">
-            <h3 class="heading">Bisnis Daring</h3>
+            <h3 class="heading text-center">Bisnis Daring dan Pemasaran</h3>
             <p class="text-justify">Program Keahlian Bisnis Daring dahulu bernama Pemasaran adalah jurusan yang berbasis Sistem Marketing Perusahaan dan Marketing Online. Bisnis Daring memiliki program Lembaga Sertifkasi Profesi berstandart BNSP. </p>
             <p><a href="#" class="more">Read More <span class="ion-arrow-right-c"></span></a></p>
           </div>
@@ -91,10 +91,10 @@
       </div>
       <div class="col-md-6 col-lg-3">
         <div class="media block-6 d-block">
-          <div class="icon mb-3"><span class="flaticon-book"></span></div>
+          <div class="icon mb-3 text-center"><span class="flaticon-book"></span></div>
           <div class="media-body">
-            <h3 class="heading">Otomasi </h3>
-            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit mess.</p>
+            <h3 class="heading text-center">Otomatisasi Tata Kelola Perkantoran </h3>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere illo, totam delectus reiciendis laborum excepturi inventore quibusdam saepe dolores beatae, dignissimos tenetur omnis dolore sed ullam quam ipsa nobis blanditiis.</p>
             <p><a href="#" class="more">Read More <span class="ion-arrow-right-c"></span></a></p>
           </div>
         </div>
@@ -108,7 +108,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <figure><img src="<?= base_url() ?>assets/images/img_2_b.jpg" alt="Image placeholder" class="img-fluid"></figure>
+        <figure><img src="<?= base_url() ?>assets/images/logo.png" alt="Image placeholder" class="img-fluid"></figure>
       </div>
       <div class="col-lg-5 ml-auto">
         <div class="block-15">
@@ -153,7 +153,7 @@
 
 <div class="bg-primary">
   <div class="container">
-    <div class="row">
+    <div class="row mb-4">
       <div class="col-md mt-4">
         <h2 class="text-center text-popular">Popular News</h2>
       </div>
@@ -163,12 +163,11 @@
         <div class="col-md mt-2 mb-4">
           <div class="card">
             <div class="card-header">
-              <h5><?= $row['judul'] ?></h5>
+              <h5 class="text-center"><?= $row['judul'] ?></h5>
             </div>
             <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <h6><?= $row['isi'] ?></h6>
-              </blockquote>
+              <img src="<?php echo base_url() . 'assets/upload/' . $row['gambar'] ?>" class="card-img-top" alt="...">
+              <h5 class=" text-justify mt-3"><?= $row['isi'] ?></h5>
             </div>
           </div>
         </div>

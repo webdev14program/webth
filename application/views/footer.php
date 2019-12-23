@@ -2,7 +2,7 @@
   <h3 class="text-center text-white">Copyright 2019 SMK TUNAS HARAPAN All rights reserved.</h3>
 </footer> -->
 
-<div class="card bg-secondary">
+<div class="card bg-secondary mt-4">
   <div class="card-body">
     <h5 class="text-center text-white text-footer">Copyright 2019 SMK TUNAS HARAPAN All rights reserved.</h5>
 

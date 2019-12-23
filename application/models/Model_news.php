@@ -5,7 +5,11 @@ class Model_news extends CI_Model
 {
     public function data($limit, $start)
     {
-        return $this->db->get('posting', $limit, $start)->result_array();
+        // return $this->db->get('posting', $limit, $start)->result_array();
+        $this->db->from('posting', $limit, $start);
+        $this->db->order_by("date", "desc");
+        $query = $this->db->get();
+        return $query->result_array();
     }
 
     public function count()
