@@ -34,7 +34,7 @@
 
         <div class="block-15">
           <div class="heading">
-            <h2>Welcome to SMK Tunas Harapan Jakarta Barat</h2>
+            <h2 class="text-center">Welcome to SMK Tunas Harapan Jakarta Barat</h2>
           </div>
           <div class="text mb-5">
             <p class="text-justify">SMK Tunas Harapan berdiri sejak tahun 1990 dahulu bernama SMEA dimana jurusan keahlian (setara sekolah menengah) hanya Bisnis Management ( Akuntantansi, Pemasaran dan Administrasi perkantoran).

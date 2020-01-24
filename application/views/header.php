@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/owl.carousel.min.css">
 
   <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/ionicons/css/ionicons.min.css">
-  <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/fontawesome/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/e78660954c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/magnific-popup.css">
 
@@ -90,6 +90,18 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>Contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Web Link
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="http://siakad.webdev14program.com/Login" target="_blank">Sistem Informasi Akademik</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://www.cimeriestehcno.com/" target="_blank">Online Learning</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="http://ujiancbt.webdev14program.com/" target="_blank">Ujian CBT-Teori</a>
+              </div>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
