@@ -1,13 +1,13 @@
 <!-- END header -->
 
-<section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(<?= base_url() ?>assets/images/1.jpg);">
+<section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(<?= base_url() ?>assets/images/background3.jpeg);">
   <div class="container">
     <div class="row align-items-center justify-content-center site-hero-inner">
       <div class="col-md-10">
 
         <div class="mb-5 element-animate">
           <div class="block-17">
-            <h1 class="text-center mb-1">SMK Tunas Harapan </h1>
+            <h1 class="text-center mb-1 font-weight-bold text-uppercase">selamat datang <br> di <br>SMK Tunas Harapan </h1>
           </div>
         </div>
 
@@ -22,12 +22,7 @@
     <div class="row align-items-center">
       <div class="col-md-6 order-md-2">
         <div class="block-16">
-          <figure>
-            <!-- <img src="<?= base_url() ?>assets/images/img_1.jpg" alt="Image placeholder" class="img-fluid"> -->
-            <iframe width="600" height="350" src="https://www.youtube.com/embed/eEKDnlnbRJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!-- <a href="https://vimeo.com/45830194" class="button popup-vimeo" data-aos="fade-right" data-aos-delay="700"><span class="ion-ios-play"></span></a> -->
-
-          </figure>
+          <figure><img src="<?= base_url() ?>assets/images/logo.png" alt="Image placeholder" class="img-fluid"></figure>
         </div>
       </div>
       <div class="col-md-6 order-md-1">
@@ -38,7 +33,7 @@
           </div>
           <div class="text mb-5">
             <p class="text-justify">SMK Tunas Harapan berdiri sejak tahun 1990 dahulu bernama SMEA dimana jurusan keahlian (setara sekolah menengah) hanya Bisnis Management ( Akuntantansi, Pemasaran dan Administrasi perkantoran).
-              sejak tahun 2013 terdapat jurusan baru dari bidang Teknologi (Teknik Komputer dan Jaringan). Berbagai prestasi dari Bidang Olahraga, Kesenian, Sastra hingga Mata Pelajaran Produktif(Lomba Kompetensi Siswa) sudah diraih oleh SMK Tunas Harapan.
+              sejak tahun 2013 terdapat jurusan baru dari bidang Teknologi (Teknik Komputer dan Jaringan). Dan sejak tahun 2020 terdapat jurusan baru dari bidang Seni dan Ekonomi Kreatif (Desain Komunikasi Visual). Berbagai prestasi dari Bidang Olahraga, Kesenian, Sastra hingga Mata Pelajaran Produktif(Lomba Kompetensi Siswa) sudah diraih oleh SMK Tunas Harapan.
               Prestasi ini bukan akhir tetapi melainkan awal untuk menciptakan Teknis Pendidikan berbasis Praktek dan Kerja Industri (sesuai Jurusan) yang inovatif dan kreatif. SMK Tunas Harapan sudah menjalankan
               Program Teaching Factory, Bursa Kerja dan Lembaga Sertifikasi Profesi berstandart BNSP. Program ini dikhususkan untuk meningkatkan kualitas kegiatan pembelajaran dan pencarian lapangan kerja berbasis jurusan masing - masing.</p>
           </div>
@@ -56,46 +51,81 @@
 
 <section class="site-section pt-3 element-animate">
   <div class="container">
+    <div class="row mb-4">
+      <div class="col-md">
+        <div class="card bg-primary">
+          <div class="card-body">
+            <h4 class="text-uppercase text-white font-weight-bold text-center">Teknologi
+              Informasi</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card bg-primary">
+          <div class="card-body">
+            <h4 class="text-uppercase text-white font-weight-bold text-center">Seni dan Ekonomi Kreatif</h4>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row">
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md">
         <div class="media block-6 d-block">
-          <div class="icon mb-3 text-center"><span class="flaticon-book text-center"></span></div>
+          <h5 class="text-center"><i class="fas fa-network-wired  fa-3x"></i></h5>
           <div class="media-body">
             <h3 class="heading text-center">Teknik Komputer dan Jaringan</h3>
             <p class="text-justify">Program Keahlian Teknik Komputer dan Jaringan adalah Jurusan berbasis Teknisi Komputer hingga Network Administrator. Program Keahlian TKJ sudah melaksanakan Program Teaching Factory, dimana Kegiatan belajar dan mengajar mengikuti
               perusahaan/ industri bidang Teknologi dan Informasi dan memiliki standart Pendidikan berkaitan dengan Lembaga Sertifikasi Profesi BNSP. </p>
-            <p><a href="#" class="more">Read More <span class="ion-arrow-right-c"></span></a></p>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md">
         <div class="media block-6 d-block">
-          <div class="icon mb-3 text-center"><span class="flaticon-book"></span></div>
+          <h5 class="text-center"><i class="fas fa-camera fa-3x"></i></h5>
           <div class="media-body">
-            <h3 class="heading text-center">Akutansi Keuangan Lembaga</h3>
-            <p class="text-justify">Program Keahlian Akuntansi Keuangan Lembaga atau dahulu bernama Akuntansi adalah Jurusan berbasis Teknik Perhitungan Sistem Keuangan untuk lembaga. AKL memiliki program Lembaga Sertifikasi Profesi berstandart BNSP. </p>
-            <p><a href="#" class="more">Read More <span class="ion-arrow-right-c"></span></a></p>
+            <h3 class="heading text-center">Desain Komunikasi Visual</h3>
+            <p class="text-justify"> Program Keahlian Desain Komunikasi Visual adalah Jurusan berbasis Multimedia yang meliputi editing gambar, editing audio, editing video dan animasi, dimana Kegiatan belajar dan mengajar mengikuti
+              perusahaan/ industri bidang Teknologi dan Informasi dan memiliki standart Pendidikan berkaitan dengan Lembaga Sertifikasi Profesi BNSP. </p>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-3">
-        <div class="media block-6 d-block">
-          <div class="icon mb-3 text-center"><span class="flaticon-book"></span></div>
-          <div class="media-body">
-            <h3 class="heading text-center">Bisnis Daring dan Pemasaran</h3>
-            <p class="text-justify">Program Keahlian Bisnis Daring dahulu bernama Pemasaran adalah jurusan yang berbasis Sistem Marketing Perusahaan dan Marketing Online. Bisnis Daring memiliki program Lembaga Sertifkasi Profesi berstandart BNSP. </p>
-            <p><a href="#" class="more">Read More <span class="ion-arrow-right-c"></span></a></p>
+    </div>
+    <div class="row mb-4 mt-4">
+      <div class="col">
+        <div class="card bg-primary">
+          <div class="card-body">
+            <h4 class="text-uppercase text-white font-weight-bold text-center">Keahlian BISNIS DAN MANAJEMEN</h4>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+    </div>
+    <div class="row">
+      <div class="col-md">
         <div class="media block-6 d-block">
-          <div class="icon mb-3 text-center"><span class="flaticon-book"></span></div>
+          <h5 class="text-center"><i class="fas fa-book-reader fa-3x"></i></h5>
+          <div class="media-body">
+            <h3 class="heading text-center">Akutansi Keuangan Lembaga</h3>
+            <p class="text-justify">Program Keahlian Akuntansi Keuangan Lembaga atau dahulu bernama Akuntansi adalah Jurusan berbasis Teknik Perhitungan Sistem Keuangan untuk lembaga. AKL memiliki program Lembaga Sertifikasi Profesi berstandart BNSP. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md">
+        <div class="media block-6 d-block">
+          <h5 class="text-center"><i class="fas fa-chart-bar fa-3x"></i></i></h5>
+          <div class="media-body">
+            <h3 class="heading text-center">Bisnis Daring dan Pemasaran</h3>
+            <p class="text-justify">Program Keahlian Bisnis Daring dahulu bernama Pemasaran adalah jurusan yang berbasis Sistem Marketing Perusahaan dan Marketing Online. Bisnis Daring memiliki program Lembaga Sertifkasi Profesi berstandart BNSP. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="media block-6 d-block">
+          <h5 class="text-center"><i class="fas fa-city fa-3x "></i></h5>
           <div class="media-body">
             <h3 class="heading text-center">Otomatisasi Tata Kelola Perkantoran </h3>
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere illo, totam delectus reiciendis laborum excepturi inventore quibusdam saepe dolores beatae, dignissimos tenetur omnis dolore sed ullam quam ipsa nobis blanditiis.</p>
-            <p><a href="#" class="more">Read More <span class="ion-arrow-right-c"></span></a></p>
+            <p class="text-justify">Program Keahlian Otomatisasi Tata Kelola Perkantoran dahulu bernama Administrasi Perkantoran adalah jurusan yang berbasis Otomatisasi Tata Kelola Perkantoran. Otomatisasi Tata Kelola Perkantoran memiliki program Lembaga Sertifkasi Profesi berstandart BNSP. </p>
           </div>
         </div>
       </div>
