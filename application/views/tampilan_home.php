@@ -73,7 +73,7 @@
         <div class="media block-6 d-block">
           <h5 class="text-center"><i class="fas fa-network-wired  fa-3x"></i></h5>
           <div class="media-body">
-            <h3 class="heading text-center">Teknik Komputer dan Jaringan</h3>
+            <h3 class="heading text-center text-uppercase">Teknik Jaringan Komputer dan telekomunikasi</h3>
             <p class="text-justify">Program Keahlian Teknik Komputer dan Jaringan adalah Jurusan berbasis Teknisi Komputer hingga Network Administrator. Program Keahlian TKJ sudah melaksanakan Program Teaching Factory, dimana Kegiatan belajar dan mengajar mengikuti
               perusahaan/ industri bidang Teknologi dan Informasi dan memiliki standart Pendidikan berkaitan dengan Lembaga Sertifikasi Profesi BNSP. </p>
           </div>
