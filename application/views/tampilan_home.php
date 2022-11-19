@@ -115,8 +115,8 @@
         <div class="media block-6 d-block">
           <h5 class="text-center"><i class="fas fa-chart-bar fa-3x"></i></i></h5>
           <div class="media-body">
-            <h3 class="heading text-center">Bisnis Daring dan Pemasaran</h3>
-            <p class="text-justify">Program Keahlian Bisnis Daring dahulu bernama Pemasaran adalah jurusan yang berbasis Sistem Marketing Perusahaan dan Marketing Online. Bisnis Daring memiliki program Lembaga Sertifkasi Profesi berstandart BNSP. </p>
+            <h3 class="heading text-center">Pemasaran</h3>
+            <p class="text-justify">Program Keahlian Pemasaran dahulu bernama BDP adalah jurusan yang berbasis Sistem Marketing Perusahaan dan Marketing Online. Bisnis Daring memiliki program Lembaga Sertifkasi Profesi berstandart BNSP.</p>
           </div>
         </div>
       </div>
@@ -124,8 +124,8 @@
         <div class="media block-6 d-block">
           <h5 class="text-center"><i class="fas fa-city fa-3x "></i></h5>
           <div class="media-body">
-            <h3 class="heading text-center">Otomatisasi Tata Kelola Perkantoran </h3>
-            <p class="text-justify">Program Keahlian Otomatisasi Tata Kelola Perkantoran dahulu bernama Administrasi Perkantoran adalah jurusan yang berbasis Otomatisasi Tata Kelola Perkantoran. Otomatisasi Tata Kelola Perkantoran memiliki program Lembaga Sertifkasi Profesi berstandart BNSP. </p>
+            <h3 class="heading text-center">Manajemen Perkantoran dan Layanan Bisnis</h3>
+            <p class="text-justify">Program Keahlian Manajemen Perkantoran dan Layanan Bisnis dahulu bernama Otomatisasi dan Tata Kelola Perkantoran adalah jurusan yang berbasis Otomatisasi Tata Kelola Perkantoran. Manajemen Perkantoran dan Layanan Bisnis memiliki program Lembaga Sertifkasi Profesi berstandart BNSP.</p>
           </div>
         </div>
       </div>

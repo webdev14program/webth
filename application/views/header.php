@@ -2,10 +2,14 @@
 <html lang="en">
 
 <head>
-  <title>SMK Tunas Harapan</title>
-  <link rel="icon" href="<?= base_url() ?>assets/images/logo.png">
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Adminiistrator SMK TUnas Harapan Jakarta Barat">
+  <meta name="author" content="Rahmadika S Setiawan,S.Kom">
+
+  <title>SMK TUNAS HARAPAN</title>
+  <link rel="icon" href="<?= base_url() ?>assets/images/logo.png">
 
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
 
@@ -56,67 +60,64 @@
         <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="<?= base_url() ?>">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="https://tefa.smkth-jakbar.com/" target="_blank">TEFA</a>
+              <a class="nav-link" href="<?= base_url() ?>">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="courses.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jurusan</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/tkj">Teknik Komputer dan Jaringan</a>
-                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/ak">Akutansi Keuangan Lembaga</a>
-                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/pm">Bisnis Daring dan Pemasaran</a>
-                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/ap">Otomatisasi Tata Kelola Perkantoran</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/tjkt">Teknik Jaringan Komputer dan Telekomunikasi</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/akl">Akuntansi dan Keuangan Lembaga</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/pm">Pemasaran</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/mplb">Manajemen Perkantoran dan Layanan Bisnis</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Jurusan/dkv">Desain Komunikasi Visual</a>
               </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teachers</a>
               <div class="dropdown-menu" aria-labelledby="dropdown05">
-                <a class="dropdown-item" href="<?= base_url() ?>Guru/TKJ">Teknik Komputer dan Jaringan</a>
-                <a class="dropdown-item" href="<?= base_url() ?>Guru/AK">Akutansi Keuangan Lembaga</a>
-                <a class="dropdown-item" href="<?= base_url() ?>Guru/PM">Bisnis Daring dan Pemasaran</a>
-                <a class="dropdown-item" href="<?= base_url() ?>Guru/AP">Otomatisasi Tata Kelola Perkantoran</a>
-                <a class="dropdown-item" href="<?= base_url() ?>Guru/Umum">Umum</a>
-                <!-- <a class="dropdown-item" href="#">Mapel Kel. B</a> -->
+                <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/TKJ">Teknik Jaringan Komputer dan Telekomunikasi</a>
+                <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/AK">Akuntansi dan Keuangan Lembaga</a>
+                <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/PM">Pemasaran</a>
+                <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/AP">Manajemen Perkantoran dan Layanan Bisnis</a>
+                <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/DKV">Desain Komunikasi Visual</a>
+                <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/Umum">Umum</a>
               </div>
-
             </li>
+            <!--<li class="nav-item">-->
+            <!--  <a class="nav-link" href="https://smkth-jakbar.com/News/AllPosting">News</a>-->
+            <!--</li>-->
             <li class="nav-item">
-              <a class="nav-link" href="<?= base_url() ?>News/AllPosting">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= base_url() ?>About">About</a>
+              <a class="nav-link" href="<?= base_url() ?>About">Profile School</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>Contact">Contact</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mr-4">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Web Link
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="http://siakad.webdev14program.com/Login" target="_blank">Sistem Informasi Akademik</a>
+                <!--<a class="dropdown-item" href="https://siakad.smkth-jakbar.com/" target="_blank">Sistem Informasi Akademik</a>-->
+                <!--<div class="dropdown-divider"></div>-->
+                <!--<a class="dropdown-item" href="https://edu.google.com/products/classroom/?modal_active=none" target="_blank">Online Learning</a>-->
+                <!--<div class="dropdown-divider"></div>-->
+                <!--<a class="dropdown-item" href="https://skl.smkth-jakbar.com" target="_blank">Surat Keterangan Lulusan</a>-->
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://www.cimeriestehcno.com/" target="_blank">Online Learning</a>
+                <a class="dropdown-item" href="https://bkk.smkth-jakbar.com/" target="_blank">Bursa Kerja Khusus</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="http://ujiancbt.webdev14program.com/" target="_blank">Ujian CBT-Teori</a>
+                <a class="dropdown-item" href="https://lsp.smkth-jakbar.com/" target="_blank">Lembaga Sertifikasi Profesi</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://tefa.smkth-jakbar.com/" target="_blank">Teaching factory</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://mading.smkth-jakbar.com/" target="_blank">Mading Online</a>
               </div>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li> -->
           </ul>
-          <ul class="navbar-nav absolute-right">
-            <li>
-              <a class="btn btn-primary" href="<?= base_url() ?>Login">Login</a>
-
-            </li>
-          </ul>
-
+          <!--<ul class="navbar-nav absolute-right">-->
+          <!--  <li>-->
+          <!--    <a class="btn btn-primary rounded" href="https://pendaftaran.smkth-jakbar.com/" target="_blank">Pendaftaran <br> Online</a>-->
+          <!--  </li>-->
+          <!--</ul>-->
         </div>
       </div>
     </nav>

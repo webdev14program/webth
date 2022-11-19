@@ -1,12 +1,12 @@
 <!-- END header -->
 
-<section class="site-hero site-sm-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(assets/images/1.jpg);">
+<section class="site-hero site-sm-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(<?= base_url() ?>assets/images/background3.jpeg);">
     <div class="container">
         <div class="row align-items-center justify-content-center site-hero-sm-inner">
             <div class="col-md-7 text-center">
 
                 <div class="mb-5 element-animate">
-                    <h1 class="mb-2">Contact Us</h1>
+                    <h1 class="mb-2 text-uppercase font-weight-bold">Contact Us</h1>
                 </div>
 
             </div>
@@ -30,7 +30,7 @@
                                 Komplek BNI 46, Jelambar, Grogol Petamburan, RT.2/RW.4, Wijaya Kusuma, Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11460</span></li>
                         <li><a href="#"><span class="icon ion-ios-telephone"></span><span class="text">(021) 5662306</span></a></li>
                         <li><a href="mailto:smktunhar@yahoo.com"><span class="icon ion-ios-mail"></span><span class="text">admin@smkth-jakbar.com</span></a></li>
-                        <li><a href="https://www.instagram.com/ruangsastrasmkth/"><span class="icon ion-logo-instagram"></span><span class="text">Instagram</span></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/smkth_46/"><span class="icon ion-logo-instagram"></span><span class="text">Instagram : #smkth_46</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -42,22 +42,3 @@
 <!-- END section -->
 
 <div id="map"></div>
-
-<div class="py-5 block-22">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0 pr-md-5">
-                <h2 class="heading">Create cool websites</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusantium optio und.</p>
-            </div>
-            <div class="col-md-6">
-                <form action="#" class="subscribe">
-                    <div class="form-group">
-                        <input type="email" class="form-control email" placeholder="Enter email">
-                        <input type="submit" class="btn btn-primary submit" value="Subscribe">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>

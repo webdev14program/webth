@@ -11,16 +11,16 @@ class Jurusan extends CI_Controller
     //     $this->load->view('Jurusan/tampilan_jurusan');
     //     $this->load->view('footer');
     // }
-    public function tkj()
+    public function tjkt()
     {
-        $isi['jurusan'] = 'Teknik Komputer dan Jaringan';
+        $isi['jurusan'] = 'TEKNIK JARINGAN KOMPUTER DAN TELEKOMUNIKASI';
         $isi['content'] = 'Jurusan/tkj';
         $this->load->view('header');
         $this->load->view('Jurusan/tampilan_jurusan', $isi);
         $this->load->view('footer');
     }
 
-    public function ak()
+    public function akl()
     {
         $isi['content'] = 'Jurusan/ak';
         $isi['jurusan'] = 'Akutansi Keuangan Lembaga';
@@ -28,10 +28,10 @@ class Jurusan extends CI_Controller
         $this->load->view('Jurusan/tampilan_jurusan', $isi);
         $this->load->view('footer');
     }
-    public function ap()
+    public function mplb()
     {
         $isi['content'] = 'Jurusan/ap';
-        $isi['jurusan'] = 'Otomatisasi Tata Kelola Perkantoran';
+        $isi['jurusan'] = 'MANAJEMEN PERKANTORAN DAN LAYANAN BISNIS';
         $this->load->view('header');
         $this->load->view('Jurusan/tampilan_jurusan', $isi);
         $this->load->view('footer');
@@ -39,7 +39,16 @@ class Jurusan extends CI_Controller
     public function pm()
     {
         $isi['content'] = 'Jurusan/pm';
-        $isi['jurusan'] = 'Bisnis Daring dan Pemasaran';
+        $isi['jurusan'] = 'Pemasaran';
+        $this->load->view('header');
+        $this->load->view('Jurusan/tampilan_jurusan', $isi);
+        $this->load->view('footer');
+    }
+
+    public function dkv()
+    {
+        $isi['content'] = 'Jurusan/dkv';
+        $isi['jurusan'] = 'DESAIN KOMUNIKASI VISUAL';
         $this->load->view('header');
         $this->load->view('Jurusan/tampilan_jurusan', $isi);
         $this->load->view('footer');
