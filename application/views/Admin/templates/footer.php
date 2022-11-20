@@ -22,21 +22,21 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<script src="<?= base_url() ?>vendor/vendor/jquery/jquery.min.js"></script>
-<script src="<?= base_url() ?>vendor/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url() ?>assetsX/vendor/jquery/jquery.min.js"></script>
+<script src="<?= base_url() ?>assetsX/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
-<script src="<?= base_url() ?>vendor/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="<?= base_url() ?>assetsX/vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <!-- Custom scripts for all pages-->
-<script src="<?= base_url() ?>vendor/js/sb-admin-2.min.js"></script>
+<script src="<?= base_url() ?>assetsX/js/sb-admin-2.min.js"></script>
 
 <!-- Page level plugins -->
-<script src="<?= base_url() ?>vendor/vendor/datatables/jquery.dataTables.min.js"></script>
-<script src="<?= base_url() ?>vendor/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="<?= base_url() ?>assetsX/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="<?= base_url() ?>assetsX/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
 <!-- Page level custom scripts -->
-<script src="<?= base_url() ?>vendor/js/demo/datatables-demo.js"></script>
+<script src="<?= base_url() ?>assetsX/js/demo/datatables-demo.js"></script>
 </body>
 
 </html>
