@@ -13,7 +13,7 @@
         <div class="card bg-success">
             <div class="card-body">
                 <h4 class="text-white font-weight-bold text-uppercase">jumlah siswa</h4>
-                <h4 class="text-white font-weight-bold text-uppercase">0 siswa</h4>
+                <h4 class="text-white font-weight-bold text-uppercase"><?= $siswa['jumlah_siswa'] ?> siswa</h4>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
         <div class="card bg-info">
             <div class="card-body">
                 <h4 class="text-white font-weight-bold text-uppercase">jumlah Guru</h4>
-                <h4 class="text-white font-weight-bold text-uppercase">0 guru</h4>
+                <h4 class="text-white font-weight-bold text-uppercase"><?= $guru['jumlah_guru'] ?> guru</h4>
             </div>
         </div>
     </div>

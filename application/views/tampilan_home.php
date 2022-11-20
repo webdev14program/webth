@@ -151,7 +151,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md">
             <div class="block-18 d-flex align-items-center">
               <div class="icon mr-4">
                 <span class="flaticon-student"></span>
@@ -162,19 +162,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="block-18 d-flex align-items-center">
-              <div class="icon mr-4">
-                <span class="flaticon-mortarboard"></span>
-              </div>
-              <div class="text">
-                <strong class="number" data-number="<?= $alumni ?>">0</strong>
-                <span>Alumni </span>
-              </div>
-            </div>
-          </div>
         </div>
-
       </div>
     </div>
   </div>
