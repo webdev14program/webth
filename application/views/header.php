@@ -8,7 +8,7 @@
   <meta name="description" content="Adminiistrator SMK TUnas Harapan Jakarta Barat">
   <meta name="author" content="Rahmadika S Setiawan,S.Kom">
 
-  <title>SMK TUNAS HARAPAN</title>
+  <title>Selamat Datang Di Website Resmi SMK Tunas Harapan Jakarta Barat</title>
   <link rel="icon" href="<?= base_url() ?>assets/images/logo.png">
 
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
@@ -79,7 +79,7 @@
                 <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/AK">Akuntansi dan Keuangan Lembaga</a>
                 <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/PM">Pemasaran</a>
                 <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/AP">Manajemen Perkantoran dan Layanan Bisnis</a>
-                <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/DKV">Desain Komunikasi Visual</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/dkv">Desain Komunikasi Visual</a>
                 <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/Umum">Umum</a>
               </div>
             </li>

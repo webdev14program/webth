@@ -36,7 +36,7 @@ class Guru extends CI_Controller
 
     public function PM()
     {
-        $isi['guru'] = 'Guru Bisnis Daring dan Pemasaran';
+        $isi['guru'] = 'Guru Pemasaran';
         $isi['content'] = 'Guru/guru_pm';
         $isi['data'] = $this->Model_guru->pm();
         $this->load->view('header');
@@ -49,6 +49,15 @@ class Guru extends CI_Controller
         $isi['guru'] = 'Guru Otomatisati Tata Kelola Perkantoran';
         $isi['content'] = 'Guru/guru_ap';
         $isi['data'] = $this->Model_guru->ap();
+        $this->load->view('header');
+        $this->load->view('Guru/tampilan_guru', $isi);
+        $this->load->view('footer');
+    }
+    public function dkv()
+    {
+        $isi['guru'] = 'DESAIN KOMUNIKASI VISUAL';
+        $isi['content'] = 'Guru/guru_dkv';
+        $isi['data'] = $this->Model_guru->dkv();
         $this->load->view('header');
         $this->load->view('Guru/tampilan_guru', $isi);
         $this->load->view('footer');

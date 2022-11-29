@@ -58,6 +58,16 @@ class Model_guru extends CI_Model
         return $query->result_array();
     }
 
+    public function dkv()
+    {
+        $sql = "SELECT * FROM `guru`
+INNER JOIN jurusan
+ON guru.jenis_guru=jurusan.kode
+WHERE jenis_guru LIKE '%DKV%';";
+        $query = $this->db->query($sql);
+        return $query->result_array();
+    }
+
     public function umum()
     {
         $sql = "SELECT * FROM `guru` WHERE guru='Umum'";
