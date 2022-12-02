@@ -32,28 +32,40 @@ class Model_guru extends CI_Model
 
     public function tkj()
     {
-        $sql = "SELECT * FROM `guru` WHERE guru='Teknik Komputer dan Jaringan'";
+        $sql = "SELECT * FROM `guru`
+INNER JOIN jurusan
+ON guru.jenis_guru=jurusan.kode
+WHERE jenis_guru LIKE '%TJKT%';";
         $query = $this->db->query($sql);
         return $query->result_array();
     }
 
     public function ak()
     {
-        $sql = "SELECT * FROM `guru` WHERE guru='Akutansi'";
+        $sql = "SELECT * FROM `guru`
+INNER JOIN jurusan
+ON guru.jenis_guru=jurusan.kode
+WHERE jenis_guru LIKE '%AKL%';";
         $query = $this->db->query($sql);
         return $query->result_array();
     }
 
     public function pm()
     {
-        $sql = "SELECT * FROM `guru` WHERE guru='Pemasaran'";
+        $sql = "SELECT * FROM `guru`
+INNER JOIN jurusan
+ON guru.jenis_guru=jurusan.kode
+WHERE jenis_guru LIKE '%PM%';";
         $query = $this->db->query($sql);
         return $query->result_array();
     }
 
     public function ap()
     {
-        $sql = "SELECT * FROM `guru` WHERE guru='Administrasi Perkantoran'";
+        $sql = "SELECT * FROM `guru`
+INNER JOIN jurusan
+ON guru.jenis_guru=jurusan.kode
+WHERE jenis_guru LIKE '%MPLB%';";
         $query = $this->db->query($sql);
         return $query->result_array();
     }
@@ -70,7 +82,10 @@ WHERE jenis_guru LIKE '%DKV%';";
 
     public function umum()
     {
-        $sql = "SELECT * FROM `guru` WHERE guru='Umum'";
+        $sql = "SELECT * FROM `guru`
+INNER JOIN jurusan
+ON guru.jenis_guru=jurusan.kode
+WHERE jenis_guru LIKE '%Umum%';";
         $query = $this->db->query($sql);
         return $query->result_array();
     }

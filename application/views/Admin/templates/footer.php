@@ -37,6 +37,7 @@
 
 <!-- Page level custom scripts -->
 <script src="<?= base_url() ?>assetsX/js/demo/datatables-demo.js"></script>
+<script src="//cdn.ckeditor.com/4.20.1/standard/ckeditor.js"></script>
 </body>
 
 </html>

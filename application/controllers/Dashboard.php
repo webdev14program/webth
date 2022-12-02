@@ -301,6 +301,106 @@ class Dashboard extends CI_Controller
         $this->load->view('Admin/templates/footer');
     }
 
+    public function post()
+    {
+        $isi['post'] = $this->Model_post->data_admin();
+        $isi['content'] = 'Admin/tampilan_post';
+        $this->load->view('Admin/templates/header');
+        $this->load->view('Admin/tampilan_dashboard', $isi);
+        $this->load->view('Admin/templates/footer');
+    }
+
+    public function upload_post()
+    {
+        $this->Model_keamanan->getKeamanan();
+        $id = rand(111111, 999999);
+        $nama_kegiatan = $this->input->post('nama_kegiatan');
+        $ringkasan_kegiatan = $this->input->post('ringkasan_kegiatan');
+        $detail_kegiatan = $this->input->post('detail_kegiatan');
+
+
+
+        $gambar = $_FILES['gambar']['name'];
+        $config['upload_path']          = './assets/upload';
+        $config['allowed_types']        = 'gif|jpg|png|jpeg';
+        $config['overwrite']            = true;
+        $config['max_size']             = 2048;
+        $this->load->library('upload', $config);
+
+        if ($this->upload->do_upload('gambar')) {
+            $gambar = $this->upload->data("file_name");
+            // redirect('Admin/data_testimoni');
+        }
+
+        $data = array(
+            'id_kegiatan' =>  $id,
+            'nama_kegiatan' =>  $nama_kegiatan,
+            'ringkasan_kegiatan' => $ringkasan_kegiatan,
+            'detail_kegiatan' => $detail_kegiatan,
+            'gambar' => $gambar
+        );
+
+        $this->db->insert('post', $data);
+        redirect('Dashboard/post');
+    }
+
+    public function detail_post($id_kegiatan)
+    {
+        $isi['detail_post'] = $this->Model_post->detail_admin_post($id_kegiatan);
+        $isi['content'] = 'Admin/tampilan_detail_post';
+        $this->load->view('Admin/templates/header');
+        $this->load->view('Admin/tampilan_dashboard', $isi);
+        $this->load->view('Admin/templates/footer');
+    }
+
+    public function upload_post_gambar()
+    {
+        $this->Model_keamanan->getKeamanan();
+        $id_kegiatan_post = rand(11111111, 99999999);
+        $id_kegiatan = $this->input->post('id_kegiatan');
+
+
+        $gambar = count($_FILES['gambar']['name']);
+        $config['upload_path']          = './assets/upload/gambar';
+        $config['allowed_types']        = 'gif|jpg|png|jpeg';
+        $config['overwrite']            = true;
+        $config['max_size']             = 2048;
+        $this->load->library('upload', $config);
+        for ($i = 1; $i <= $gambar; $i++) {
+            if ($this->upload->do_upload('gambar')) {
+                $gambar_test = $this->upload->data("file_name");
+                // redirect('Admin/data_testimoni');
+            }
+            $data = array(
+                'id_post_gambar' =>  $id_kegiatan_post,
+                'id_kegiatan' =>  $id_kegiatan,
+                'gambar' => $gambar_test
+            );
+        }
+
+
+
+
+        $this->db->insert('post_gambar', $data);
+        redirect('Dashboard/post');
+    }
+
+    public function hapus_post($id_kegiatan)
+    {
+        $this->db->where('id_kegiatan', $id_kegiatan);
+        $this->db->delete('post');
+        $this->session->set_flashdata('info', '<div class="row">
+        <div class="col-md mt-2">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>POST BERHASIL DI HAPUS BERDASARKAN ID </strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        </div>');
+        redirect('Dashboard/post');
+    }
     public function logout()
     {
         $this->session->sess_destroy();

@@ -177,15 +177,14 @@
       </div>
     </div>
     <div class="row">
-      <?php foreach ($popular as $row) : ?>
+      <?php foreach ($new_post as $row) : ?>
         <div class="col-md mt-2 mb-4">
           <div class="card">
-            <div class="card-header">
-              <h5 class="text-center"><?= $row['judul'] ?></h5>
+            <div class="card-header" style="height: 80px;">
+              <h5 class="text-center text-uppercase font-weight-bold"><?= $row['nama_kegiatan'] ?></h5>
             </div>
             <div class="card-body">
-              <img src="<?php echo base_url() . 'assets/upload/' . $row['gambar'] ?>" class="card-img-top" alt="...">
-              <h5 class=" text-justify mt-3"><?= $row['isi'] ?></h5>
+              <h5 class="text-center"><img src="<?php echo base_url() . 'assets/upload/' . $row['gambar'] ?>" class="card-img-top" style="width: 300px;height: 250px;"></h5>
             </div>
           </div>
         </div>
@@ -193,6 +192,11 @@
     </div>
   </div>
 
+  <h3 class="text-center text-uppercase">
+    <a class="btn btn-dark text-white mb-3" href="<?= base_url() ?>Post">
+      <h4 class="text-center text-uppercase text-white font-weight-bold">All Post</h4>
+    </a>
+  </h3>
 </div>
 <!-- END section -->
 

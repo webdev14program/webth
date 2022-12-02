@@ -75,17 +75,20 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teachers</a>
               <div class="dropdown-menu" aria-labelledby="dropdown05">
-                <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/TKJ">Teknik Jaringan Komputer dan Telekomunikasi</a>
-                <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/AK">Akuntansi dan Keuangan Lembaga</a>
-                <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/PM">Pemasaran</a>
-                <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/AP">Manajemen Perkantoran dan Layanan Bisnis</a>
+                <a class="dropdown-item" href="<?= base_url() ?>/Guru/TJKT">Teknik Jaringan Komputer dan Telekomunikasi</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/AKL">Akuntansi dan Keuangan Lembaga</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/PM">Pemasaran</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/MPLB">Manajemen Perkantoran dan Layanan Bisnis</a>
                 <a class="dropdown-item" href="<?= base_url() ?>Guru/dkv">Desain Komunikasi Visual</a>
-                <a class="dropdown-item" href="https://smkth-jakbar.com/Guru/Umum">Umum</a>
+                <a class="dropdown-item" href="<?= base_url() ?>Guru/Umum">Umum</a>
               </div>
             </li>
             <!--<li class="nav-item">-->
             <!--  <a class="nav-link" href="https://smkth-jakbar.com/News/AllPosting">News</a>-->
             <!--</li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="<?= base_url() ?>Post">Post</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>About">Profile School</a>
             </li>

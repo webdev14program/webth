@@ -23,7 +23,7 @@ class Jurusan extends CI_Controller
     public function akl()
     {
         $isi['content'] = 'Jurusan/ak';
-        $isi['jurusan'] = 'Akutansi Keuangan Lembaga';
+        $isi['jurusan'] = 'Akuntansi Keuangan dan Lembaga';
         $this->load->view('header');
         $this->load->view('Jurusan/tampilan_jurusan', $isi);
         $this->load->view('footer');

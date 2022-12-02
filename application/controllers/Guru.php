@@ -14,9 +14,9 @@ class Guru extends CI_Controller
         $this->load->view('Admin/tampilan_footer');
     }
 
-    public function TKJ()
+    public function TJKT()
     {
-        $isi['guru'] = 'Guru Teknik Komputer dan Jaringan';
+        $isi['guru'] = 'Teknik Jaringan Komputer Dan Telekomunikasi';
         $isi['content'] = 'Guru/guru_tkj';
         $isi['data'] = $this->Model_guru->tkj();
         $this->load->view('header');
@@ -24,9 +24,9 @@ class Guru extends CI_Controller
         $this->load->view('footer');
     }
 
-    public function AK()
+    public function AKL()
     {
-        $isi['guru'] = 'Guru Akutansi Keuangan Lembaga';
+        $isi['guru'] = 'Akuntansi dan Keuangan Lembaga';
         $isi['content'] = 'Guru/guru_ak';
         $isi['data'] = $this->Model_guru->ak();
         $this->load->view('header');
@@ -44,9 +44,9 @@ class Guru extends CI_Controller
         $this->load->view('footer');
     }
 
-    public function AP()
+    public function mplb()
     {
-        $isi['guru'] = 'Guru Otomatisati Tata Kelola Perkantoran';
+        $isi['guru'] = 'MANAJEMEN PERKANTORAN DAN LAYANAN BISNIS';
         $isi['content'] = 'Guru/guru_ap';
         $isi['data'] = $this->Model_guru->ap();
         $this->load->view('header');
@@ -63,9 +63,9 @@ class Guru extends CI_Controller
         $this->load->view('footer');
     }
 
-    public function Umum()
+    public function umum()
     {
-        $isi['guru'] = 'Guru Mata Pelajaran Umum';
+        $isi['guru'] = 'Mata Pelajaran Umum';
         $isi['content'] = 'Guru/guru_umum';
         $isi['data'] = $this->Model_guru->umum();
         $this->load->view('header');

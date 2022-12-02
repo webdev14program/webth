@@ -79,8 +79,7 @@
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="utilities-color.html">Post</a>
-                        <a class="collapse-item" href="utilities-border.html">News</a>
+                        <a class="collapse-item" href="<?= base_url() ?>Dashboard/post">Post</a>
                     </div>
                 </div>
             </li>
