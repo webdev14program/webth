@@ -40,7 +40,7 @@
                                         <h1 class="h4 text-gray-900 mb-4 text-uppercase font-weight-bold">Administrator <br> smk tunas harapan <br> <span class="text-success"><?= $version ?></span></h1>
                                     </div>
                                     <?= $this->session->flashdata('pesan'); ?>
-                                    <form class="user" method="POST" action="<?= base_url() ?>Auth/proses_login">
+                                    <form class="user" method="POST" action="<?= base_url() ?>Webadmin/proses_login">
                                         <div class=" form-group">
                                             <input type="text" class="form-control form-control-user" name="username" aria-describedby="emailHelp" placeholder="Enter Username ...">
                                         </div>

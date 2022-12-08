@@ -27,6 +27,14 @@ WHERE id_kegiatan='$id_kegiatan';";
         return $query->row_array();
     }
 
+    public function detail_post($id_kegiatan)
+    {
+        $sql = "SELECT * FROM `post`
+WHERE id_kegiatan='$id_kegiatan';";
+        $query = $this->db->query($sql);
+        return $query->row_array();
+    }
+
     public function data_terbaru()
     {
         $sql = "SELECT * FROM `post`

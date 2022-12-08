@@ -60,15 +60,13 @@
             </div>
             <div class="modal-body">
                 <form method='post' action='<?= base_url() ?>Dashboard/upload_post_gambar' enctype='multipart/form-data'>
-                    <?php for ($i = 1; $i <= 5; $i++) : ?>
-                        <input type="text" name="id_kegiatan" value="<?= $detail_post['id_kegiatan'] ?>" hidden>
-                        <div class="form-group">
-                            <input type="file" name="gambar[]" class="form-control-file" name="file" required>
-                        </div>
-                    <?php endfor; ?>
+                    <div class="form-group">
+                        <label>Choose Files</label>
+                        <input type="file" class="form-control" name="files[]" multiple />
+                    </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" name="submit" value="Upload" class="btn btn-primary">Upload</button>
+                        <input type="submit" name="fileSubmit" value="UPLOAD" class="btn btn-primary">Upload</input>
                     </div>
                 </form>
             </div>

@@ -16,19 +16,24 @@
 <!-- END section -->
 
 <section class="site-section element-animate">
-    <div class="container">
+    <div class="container" style="margin-top: -80px;">
         <div class="row">
             <?php foreach ($post as $row) : ?>
-                <div class="card ml-2 mt-2" style="width: 350px;height:500px">
-                    <div class="card-header bg-primary">
-                        <h5 class="text-center text-uppercase text-white font-weight-bold" style="height: 30px ;"><?= $row['nama_kegiatan'] ?></h5>
-                    </div>
-                    <img src="<?= base_url() ?>assets/upload/<?= $row['gambar'] ?>" class="" alt="<?= $row['nama_kegiatan'] ?>">
-                    <div class="card-body">
-                        <p style="width: 250px; text-overflow: clip; overflow: auto;"><?= $row['ringkasan_kegiatan'] ?></p>
-                    </div>
-                    <div class="card-footer text-muted">
-                        <p class=" text-uppercase font-weight-bold text-center"><?= $row['date'] ?></p>
+
+                <div class="col-md">
+                    <div class="card mt-2" style="width: 350px;height:500px">
+                        <div class="card-header bg-primary">
+                            <h5 class="text-center text-uppercase text-white font-weight-bold" style="height: 30px ;"><?= $row['nama_kegiatan'] ?></h5>
+                        </div>
+                        <img src="<?= base_url() ?>assets/upload/<?= $row['gambar'] ?>" class="" alt="<?= $row['nama_kegiatan'] ?>">
+                        <div class="card-body">
+                            <h6 class="text-justify"><?= $row['ringkasan_kegiatan'] ?>
+                                <h6 class="text-left">
+                                    <a href="<?= base_url() ?>Post/detail_post/<?= $row['id_kegiatan'] ?>">Read More</a>
+                                </h6>
+                                <h6 class="text-right"><?= $row['date'] ?></h6>
+                            </h6>
+                        </div>
                     </div>
                 </div>
             <?php endforeach; ?>
