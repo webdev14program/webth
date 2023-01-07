@@ -8,43 +8,43 @@ use Box\Spout\Reader\Common\Creator\ReaderEntityFactory;
 class Dashboard extends CI_Controller
 {
 
-    public function index()
-    {
-        // $isi['tahun_ajaran'] = $this->Model_tahun_ajaran->home_tahun_ajaran();
-        $isi['jurusan'] = $this->Model_jurusan->countJurusan();
-        $isi['guru'] = $this->Model_guru->countdataGuru();
-        $isi['kelas'] = $this->Model_kelas->countKelas();
-        $isi['siswa'] = $this->Model_siswa->countSiswa();
+	public function index()
+	{
+		// $isi['tahun_ajaran'] = $this->Model_tahun_ajaran->home_tahun_ajaran();
+		$isi['jurusan'] = $this->Model_jurusan->countJurusan();
+		$isi['guru'] = $this->Model_guru->countdataGuru();
+		$isi['kelas'] = $this->Model_kelas->countKelas();
+		$isi['siswa'] = $this->Model_siswa->countSiswa();
 
-        $isi['version'] = 'RC V2.0';
-        $isi['content'] = 'Admin/tampilan_home';
-        $this->load->view('Admin/templates/header');
-        $this->load->view('Admin/tampilan_dashboard', $isi);
-        $this->load->view('Admin/templates/footer');
-    }
+		$isi['version'] = 'RC V2.0';
+		$isi['content'] = 'Admin/tampilan_home';
+		$this->load->view('Admin/templates/header');
+		$this->load->view('Admin/tampilan_dashboard', $isi);
+		$this->load->view('Admin/templates/footer');
+	}
 
-    public function data_jurusan()
-    {
-        $isi['jurusan'] = $this->Model_jurusan->dataJurusan();
-        $isi['content'] = 'Admin/tampilan_jurusan';
-        $this->load->view('Admin/templates/header');
-        $this->load->view('Admin/tampilan_dashboard', $isi);
-        $this->load->view('Admin/templates/footer');
-    }
+	public function data_jurusan()
+	{
+		$isi['jurusan'] = $this->Model_jurusan->dataJurusan();
+		$isi['content'] = 'Admin/tampilan_jurusan';
+		$this->load->view('Admin/templates/header');
+		$this->load->view('Admin/tampilan_dashboard', $isi);
+		$this->load->view('Admin/templates/footer');
+	}
 
-    public function data_kelas()
-    {
-        $isi['tahun_ajaran'] = $this->Model_kelas->tahun_ajaran();
-        $isi['content'] = 'Admin/tampilan_kelas';
-        $this->load->view('Admin/templates/header');
-        $this->load->view('Admin/tampilan_dashboard', $isi);
-        $this->load->view('Admin/templates/footer');
-    }
+	public function data_kelas()
+	{
+		$isi['tahun_ajaran'] = $this->Model_kelas->tahun_ajaran();
+		$isi['content'] = 'Admin/tampilan_kelas';
+		$this->load->view('Admin/templates/header');
+		$this->load->view('Admin/tampilan_dashboard', $isi);
+		$this->load->view('Admin/templates/footer');
+	}
 
-    public function hapus_all_kelas()
-    {
-        $this->db->empty_table('kelas');
-        $this->session->set_flashdata('pesan', '<div class="row">
+	public function hapus_all_kelas()
+	{
+		$this->db->empty_table('kelas');
+		$this->session->set_flashdata('pesan', '<div class="row">
         <div class="col-md mt-2">
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <strong>Data Kelas Berhasil Di Hapus</strong>
@@ -55,48 +55,48 @@ class Dashboard extends CI_Controller
 
         </div>
         </div>');
-        redirect('Dashboard/data_kelas');
-    }
+		redirect('Dashboard/data_kelas');
+	}
 
-    public function upload_kelas()
-    {
-        if ($this->input->post('submit', TRUE) == 'upload') {
-            $config['upload_path']      = './temp_doc/';
-            $config['allowed_types']    = 'xlsx|xls';
-            $config['file_name']        = 'doc' . time();
+	public function upload_kelas()
+	{
+		if ($this->input->post('submit', TRUE) == 'upload') {
+			$config['upload_path']      = './temp_doc/';
+			$config['allowed_types']    = 'xlsx|xls';
+			$config['file_name']        = 'doc' . time();
 
-            $this->load->library('upload', $config);
+			$this->load->library('upload', $config);
 
-            if ($this->upload->do_upload('excel')) {
-                $file   = $this->upload->data();
+			if ($this->upload->do_upload('excel')) {
+				$file   = $this->upload->data();
 
-                $reader = ReaderEntityFactory::createXLSXReader();
-                $reader->open('temp_doc/' . $file['file_name']);
+				$reader = ReaderEntityFactory::createXLSXReader();
+				$reader->open('temp_doc/' . $file['file_name']);
 
 
-                foreach ($reader->getSheetIterator() as $sheet) {
-                    $numRow = 1;
-                    $save   = array();
-                    foreach ($sheet->getRowIterator() as $row) {
+				foreach ($reader->getSheetIterator() as $sheet) {
+					$numRow = 1;
+					$save   = array();
+					foreach ($sheet->getRowIterator() as $row) {
 
-                        if ($numRow > 1) {
+						if ($numRow > 1) {
 
-                            $cells = $row->getCells();
+							$cells = $row->getCells();
 
-                            $data = array(
-                                'id'              => $cells[0],
-                                'kode'     => $cells[1],
-                                'kelas'            => $cells[2],
-                                'id_tahun_ajaran'            => $cells[3],
-                            );
-                            array_push($save, $data);
-                        }
-                        $numRow++;
-                    }
-                    $this->Model_kelas->simpan_kelas($save);
-                    $reader->close();
-                    unlink('temp_doc/' . $file['file_name']);
-                    $this->session->set_flashdata('pesan', '<div class="row">
+							$data = array(
+								'id'              => $cells[0],
+								'kode'     => $cells[1],
+								'kelas'            => $cells[2],
+								'id_tahun_ajaran'            => $cells[3],
+							);
+							array_push($save, $data);
+						}
+						$numRow++;
+					}
+					$this->Model_kelas->simpan_kelas($save);
+					$reader->close();
+					unlink('temp_doc/' . $file['file_name']);
+					$this->session->set_flashdata('pesan', '<div class="row">
         <div class="col-md mt-2">
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 <strong>Data Kelas Berhasil Di Tambah</strong>
@@ -107,36 +107,36 @@ class Dashboard extends CI_Controller
 
         </div>
         </div>');
-                    redirect('Dashboard/data_kelas');
-                }
-            } else {
-                echo "Error :" . $this->upload->display_errors();
-            }
-        }
-    }
+					redirect('Dashboard/data_kelas');
+				}
+			} else {
+				echo "Error :" . $this->upload->display_errors();
+			}
+		}
+	}
 
-    public function detail_kelas($id_tahun_ajaran)
-    {
-        $isi['detail_kelas'] = $this->Model_kelas->detail_kelas($id_tahun_ajaran);
-        $isi['content'] = 'Admin/tampilan_detail_kelas';
-        $this->load->view('Admin/templates/header');
-        $this->load->view('Admin/tampilan_dashboard', $isi);
-        $this->load->view('Admin/templates/footer');
-    }
+	public function detail_kelas($id_tahun_ajaran)
+	{
+		$isi['detail_kelas'] = $this->Model_kelas->detail_kelas($id_tahun_ajaran);
+		$isi['content'] = 'Admin/tampilan_detail_kelas';
+		$this->load->view('Admin/templates/header');
+		$this->load->view('Admin/tampilan_dashboard', $isi);
+		$this->load->view('Admin/templates/footer');
+	}
 
-    public function data_guru()
-    {
-        $isi['guru'] = $this->Model_guru->dataGuru();
-        $isi['content'] = 'Admin/tampilan_guru';
-        $this->load->view('Admin/templates/header');
-        $this->load->view('Admin/tampilan_dashboard', $isi);
-        $this->load->view('Admin/templates/footer');
-    }
+	public function data_guru()
+	{
+		$isi['guru'] = $this->Model_guru->dataGuru();
+		$isi['content'] = 'Admin/tampilan_guru';
+		$this->load->view('Admin/templates/header');
+		$this->load->view('Admin/tampilan_dashboard', $isi);
+		$this->load->view('Admin/templates/footer');
+	}
 
-    public function hapus_all_guru()
-    {
-        $this->db->empty_table('guru');
-        $this->session->set_flashdata('pesan', '<div class="row">
+	public function hapus_all_guru()
+	{
+		$this->db->empty_table('guru');
+		$this->session->set_flashdata('pesan', '<div class="row">
         <div class="col-md mt-2">
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <strong>Data Guru Berhasil Di Hapus</strong>
@@ -147,48 +147,48 @@ class Dashboard extends CI_Controller
 
         </div>
         </div>');
-        redirect('Dashboard/data_guru');
-    }
+		redirect('Dashboard/data_guru');
+	}
 
-    public function upload_guru()
-    {
-        if ($this->input->post('submit', TRUE) == 'upload') {
-            $config['upload_path']      = './temp_doc/';
-            $config['allowed_types']    = 'xlsx|xls';
-            $config['file_name']        = 'doc' . time();
+	public function upload_guru()
+	{
+		if ($this->input->post('submit', TRUE) == 'upload') {
+			$config['upload_path']      = './temp_doc/';
+			$config['allowed_types']    = 'xlsx|xls';
+			$config['file_name']        = 'doc' . time();
 
-            $this->load->library('upload', $config);
+			$this->load->library('upload', $config);
 
-            if ($this->upload->do_upload('excel')) {
-                $file   = $this->upload->data();
+			if ($this->upload->do_upload('excel')) {
+				$file   = $this->upload->data();
 
-                $reader = ReaderEntityFactory::createXLSXReader();
-                $reader->open('temp_doc/' . $file['file_name']);
+				$reader = ReaderEntityFactory::createXLSXReader();
+				$reader->open('temp_doc/' . $file['file_name']);
 
 
-                foreach ($reader->getSheetIterator() as $sheet) {
-                    $numRow = 1;
-                    $save   = array();
-                    foreach ($sheet->getRowIterator() as $row) {
+				foreach ($reader->getSheetIterator() as $sheet) {
+					$numRow = 1;
+					$save   = array();
+					foreach ($sheet->getRowIterator() as $row) {
 
-                        if ($numRow > 1) {
+						if ($numRow > 1) {
 
-                            $cells = $row->getCells();
+							$cells = $row->getCells();
 
-                            $data = array(
-                                'id_guru'       => $cells[0],
-                                'nama_guru'     => $cells[1],
-                                'jenis_guru'    => $cells[2],
+							$data = array(
+								'id_guru'       => $cells[0],
+								'nama_guru'     => $cells[1],
+								'jenis_guru'    => $cells[2],
 
-                            );
-                            array_push($save, $data);
-                        }
-                        $numRow++;
-                    }
-                    $this->Model_guru->simpan($save);
-                    $reader->close();
-                    unlink('temp_doc/' . $file['file_name']);
-                    $this->session->set_flashdata('pesan', '<div class="row">
+							);
+							array_push($save, $data);
+						}
+						$numRow++;
+					}
+					$this->Model_guru->simpan($save);
+					$reader->close();
+					unlink('temp_doc/' . $file['file_name']);
+					$this->session->set_flashdata('pesan', '<div class="row">
             <div class="col-md mt-2">
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <strong>Data Guru Berhasil Di Tambah</strong>
@@ -199,27 +199,27 @@ class Dashboard extends CI_Controller
     
             </div>
             </div>');
-                    redirect('Dashboard/data_guru');
-                }
-            } else {
-                echo "Error :" . $this->upload->display_errors();
-            }
-        }
-    }
+					redirect('Dashboard/data_guru');
+				}
+			} else {
+				echo "Error :" . $this->upload->display_errors();
+			}
+		}
+	}
 
-    public function data_siswa()
-    {
-        $isi['siswa'] = $this->Model_siswa->dataSiswa();
-        $isi['content'] = 'Admin/tampilan_siswa';
-        $this->load->view('Admin/templates/header');
-        $this->load->view('Admin/tampilan_dashboard', $isi);
-        $this->load->view('Admin/templates/footer');
-    }
+	public function data_siswa()
+	{
+		$isi['siswa'] = $this->Model_siswa->dataSiswa();
+		$isi['content'] = 'Admin/tampilan_siswa';
+		$this->load->view('Admin/templates/header');
+		$this->load->view('Admin/tampilan_dashboard', $isi);
+		$this->load->view('Admin/templates/footer');
+	}
 
-    public function hapus_all_siswa()
-    {
-        $this->db->empty_table('siswa');
-        $this->session->set_flashdata('pesan', '<div class="row">
+	public function hapus_all_siswa()
+	{
+		$this->db->empty_table('siswa');
+		$this->session->set_flashdata('pesan', '<div class="row">
         <div class="col-md mt-2">
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <strong>Data Siswa Berhasil Di Hapus</strong>
@@ -230,50 +230,50 @@ class Dashboard extends CI_Controller
 
         </div>
         </div>');
-        redirect('Dashboard/data_siswa');
-    }
+		redirect('Dashboard/data_siswa');
+	}
 
-    public function upload_siswa()
-    {
-        if ($this->input->post('submit', TRUE) == 'upload') {
-            $config['upload_path']      = './temp_doc/';
-            $config['allowed_types']    = 'xlsx|xls';
-            $config['file_name']        = 'doc' . time();
+	public function upload_siswa()
+	{
+		if ($this->input->post('submit', TRUE) == 'upload') {
+			$config['upload_path']      = './temp_doc/';
+			$config['allowed_types']    = 'xlsx|xls';
+			$config['file_name']        = 'doc' . time();
 
-            $this->load->library('upload', $config);
+			$this->load->library('upload', $config);
 
-            if ($this->upload->do_upload('excel')) {
-                $file   = $this->upload->data();
+			if ($this->upload->do_upload('excel')) {
+				$file   = $this->upload->data();
 
-                $reader = ReaderEntityFactory::createXLSXReader();
-                $reader->open('temp_doc/' . $file['file_name']);
+				$reader = ReaderEntityFactory::createXLSXReader();
+				$reader->open('temp_doc/' . $file['file_name']);
 
 
-                foreach ($reader->getSheetIterator() as $sheet) {
-                    $numRow = 1;
-                    $save   = array();
-                    foreach ($sheet->getRowIterator() as $row) {
+				foreach ($reader->getSheetIterator() as $sheet) {
+					$numRow = 1;
+					$save   = array();
+					foreach ($sheet->getRowIterator() as $row) {
 
-                        if ($numRow > 1) {
+						if ($numRow > 1) {
 
-                            $cells = $row->getCells();
+							$cells = $row->getCells();
 
-                            $data = array(
-                                'id_siswa'       => $cells[0],
-                                'nama_siswa'     => $cells[1],
-                                'jurusan'    => $cells[2],
-                                'kelas'    => $cells[3],
-                                'tahun_ajaran'    => $cells[4],
+							$data = array(
+								'id_siswa'       => $cells[0],
+								'nama_siswa'     => $cells[1],
+								'jurusan'    => $cells[2],
+								'kelas'    => $cells[3],
+								'tahun_ajaran'    => $cells[4],
 
-                            );
-                            array_push($save, $data);
-                        }
-                        $numRow++;
-                    }
-                    $this->Model_siswa->simpan($save);
-                    $reader->close();
-                    unlink('temp_doc/' . $file['file_name']);
-                    $this->session->set_flashdata('pesan', '<div class="row">
+							);
+							array_push($save, $data);
+						}
+						$numRow++;
+					}
+					$this->Model_siswa->simpan($save);
+					$reader->close();
+					unlink('temp_doc/' . $file['file_name']);
+					$this->session->set_flashdata('pesan', '<div class="row">
             <div class="col-md mt-2">
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <strong>Data Siswa Berhasil Di Tambah</strong>
@@ -284,144 +284,111 @@ class Dashboard extends CI_Controller
     
             </div>
             </div>');
-                    redirect('Dashboard/data_siswa');
-                }
-            } else {
-                echo "Error :" . $this->upload->display_errors();
-            }
-        }
-    }
+					redirect('Dashboard/data_siswa');
+				}
+			} else {
+				echo "Error :" . $this->upload->display_errors();
+			}
+		}
+	}
 
-    public function detail_siswa($id_tahun_ajaran)
-    {
-        $isi['detail_siswa'] = $this->Model_siswa->detail_siswa($id_tahun_ajaran);
-        $isi['content'] = 'Admin/tampilan_detail_siswa';
-        $this->load->view('Admin/templates/header');
-        $this->load->view('Admin/tampilan_dashboard', $isi);
-        $this->load->view('Admin/templates/footer');
-    }
+	public function detail_siswa($id_tahun_ajaran)
+	{
+		$isi['detail_siswa'] = $this->Model_siswa->detail_siswa($id_tahun_ajaran);
+		$isi['content'] = 'Admin/tampilan_detail_siswa';
+		$this->load->view('Admin/templates/header');
+		$this->load->view('Admin/tampilan_dashboard', $isi);
+		$this->load->view('Admin/templates/footer');
+	}
 
-    public function post()
-    {
-        $isi['post'] = $this->Model_post->data_admin();
-        $isi['content'] = 'Admin/tampilan_post';
-        $this->load->view('Admin/templates/header');
-        $this->load->view('Admin/tampilan_dashboard', $isi);
-        $this->load->view('Admin/templates/footer');
-    }
+	public function post()
+	{
+		$isi['post'] = $this->Model_post->data_admin();
+		$isi['content'] = 'Admin/tampilan_post';
+		$this->load->view('Admin/templates/header');
+		$this->load->view('Admin/tampilan_dashboard', $isi);
+		$this->load->view('Admin/templates/footer');
+	}
 
-    public function upload_post()
-    {
-        $this->Model_keamanan->getKeamanan();
-        $id = rand(111111, 999999);
-        $nama_kegiatan = $this->input->post('nama_kegiatan');
-        $ringkasan_kegiatan = $this->input->post('ringkasan_kegiatan');
-        $detail_kegiatan = $this->input->post('detail_kegiatan');
+	public function upload_post()
+	{
+		$this->Model_keamanan->getKeamanan();
+		$id = rand(111111, 999999);
+		$nama_kegiatan = $this->input->post('nama_kegiatan');
+		$ringkasan_kegiatan = $this->input->post('ringkasan_kegiatan');
+		$detail_kegiatan = $this->input->post('detail_kegiatan');
 
 
 
-        $gambar = $_FILES['gambar']['name'];
-        $config['upload_path']          = './assets/upload';
-        $config['allowed_types']        = 'gif|jpg|png|jpeg';
-        $config['overwrite']            = true;
-        $config['max_size']             = 2048;
-        $this->load->library('upload', $config);
+		$gambar = $_FILES['gambar']['name'];
+		$config['upload_path']          = './assets/upload';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
+		$config['overwrite']            = true;
+		$config['max_size']             = 2048;
+		$this->load->library('upload', $config);
 
-        if ($this->upload->do_upload('gambar')) {
-            $gambar = $this->upload->data("file_name");
-            // redirect('Admin/data_testimoni');
-        }
+		if ($this->upload->do_upload('gambar')) {
+			$gambar = $this->upload->data("file_name");
+			// redirect('Admin/data_testimoni');
+		}
 
-        $data = array(
-            'id_kegiatan' =>  $id,
-            'nama_kegiatan' =>  $nama_kegiatan,
-            'ringkasan_kegiatan' => $ringkasan_kegiatan,
-            'detail_kegiatan' => $detail_kegiatan,
-            'gambar' => $gambar
-        );
+		$data = array(
+			'id_kegiatan' =>  $id,
+			'nama_kegiatan' =>  $nama_kegiatan,
+			'ringkasan_kegiatan' => $ringkasan_kegiatan,
+			'detail_kegiatan' => $detail_kegiatan,
+			'gambar' => $gambar,
+			'jumlah_gambar' => 0
+		);
 
-        $this->db->insert('post', $data);
-        redirect('Dashboard/post');
-    }
+		$this->db->insert('post', $data);
+		redirect('Dashboard/post');
+	}
 
-    public function detail_post($id_kegiatan)
-    {
-        $isi['detail_post'] = $this->Model_post->detail_admin_post($id_kegiatan);
-        $isi['content'] = 'Admin/tampilan_detail_post';
-        $this->load->view('Admin/templates/header');
-        $this->load->view('Admin/tampilan_dashboard', $isi);
-        $this->load->view('Admin/templates/footer');
-    }
+	public function detail_post($id_kegiatan)
+	{
+		$isi['detail_post'] = $this->Model_post->detail_admin_post($id_kegiatan);
+		$isi['detail_post_gambar'] = $this->Model_post->detail_admin_post_gambar($id_kegiatan);
+		$isi['content'] = 'Admin/tampilan_detail_post';
+		$this->load->view('Admin/templates/header');
+		$this->load->view('Admin/tampilan_dashboard', $isi);
+		$this->load->view('Admin/templates/footer');
+	}
 
-    public function upload_post_gambar()
-    {
-        $data = array();
-        $errorUploadType = $statusMsg = '';
+	public function upload_post_gambar()
+	{
 
-        // If file upload form submitted 
-        if ($this->input->post('fileSubmit')) {
 
-            // If files are selected to upload 
-            if (!empty($_FILES['files']['name']) && count(array_filter($_FILES['files']['name'])) > 0) {
-                $filesCount = count($_FILES['files']['name']);
-                for ($i = 0; $i < $filesCount; $i++) {
-                    $_FILES['file']['name']     = $_FILES['files']['name'][$i];
-                    $_FILES['file']['type']     = $_FILES['files']['type'][$i];
-                    $_FILES['file']['tmp_name'] = $_FILES['files']['tmp_name'][$i];
-                    $_FILES['file']['error']     = $_FILES['files']['error'][$i];
-                    $_FILES['file']['size']     = $_FILES['files']['size'][$i];
+		$this->Model_keamanan->getKeamanan();
+		$id = rand(111111, 999999);
+		$id_kegiatan = $this->input->post('id_kegiatan');
+		$gambar = $_FILES['gambar']['name'];
+		$config['upload_path']          = './assets/upload/gambar';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
+		$config['overwrite']            = true;
+		$config['max_size']             = 2048;
+		$this->load->library('upload', $config);
 
-                    // File upload configuration 
-                    $uploadPath = './assets/upload/gambar';
-                    $config['upload_path'] = $uploadPath;
-                    $config['allowed_types'] = 'jpg|jpeg|png|gif';
-                    //$config['max_size']    = '100'; 
-                    //$config['max_width'] = '1024'; 
-                    //$config['max_height'] = '768'; 
+		if ($this->upload->do_upload('gambar')) {
+			$gambar = $this->upload->data("file_name");
+			// redirect('Admin/data_testimoni');
+		}
 
-                    // Load and initialize upload library 
-                    $this->load->library('upload', $config);
-                    $this->upload->initialize($config);
+		$data = array(
+			'id_gambar_post' =>  $id,
+			'id_kegiatan' =>  $id_kegiatan,
+			'gambar' => $gambar
+		);
 
-                    // Upload file to server 
-                    if ($this->upload->do_upload('file')) {
-                        // Uploaded file data 
-                        $fileData = $this->upload->data();
-                        $uploadData[$i]['file_name'] = $fileData['file_name'];
-                        $uploadData[$i]['uploaded_on'] = date("Y-m-d H:i:s");
-                    } else {
-                        $errorUploadType .= $_FILES['file']['name'] . ' | ';
-                    }
-                }
+		$this->db->insert('post_gambar', $data);
+		redirect('Dashboard/detail_post/' . $id_kegiatan);
+	}
 
-                $errorUploadType = !empty($errorUploadType) ? '<br/>File Type Error: ' . trim($errorUploadType, ' | ') : '';
-                if (!empty($uploadData)) {
-                    // Insert files data into the database 
-                    $insert = $this->file->insert($uploadData);
-
-                    // Upload status message 
-                    $statusMsg = $insert ? 'Files uploaded successfully!' . $errorUploadType : 'Some problem occurred, please try again.';
-                } else {
-                    $statusMsg = "Sorry, there was an error uploading your file." . $errorUploadType;
-                }
-            } else {
-                $statusMsg = 'Please select image files to upload.';
-            }
-        }
-
-        // Get files data from the database 
-        $data['files'] = $this->file->getRows();
-
-        // Pass the files data to view 
-        $data['statusMsg'] = $statusMsg;
-        $this->load->view('upload_files/index', $data);
-    }
-
-    public function hapus_post($id_kegiatan)
-    {
-        $this->db->where('id_kegiatan', $id_kegiatan);
-        $this->db->delete('post');
-        $this->session->set_flashdata('info', '<div class="row">
+	public function hapus_post($id_kegiatan)
+	{
+		$this->db->where('id_kegiatan', $id_kegiatan);
+		$this->db->delete('post');
+		$this->session->set_flashdata('info', '<div class="row">
         <div class="col-md mt-2">
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <strong>POST BERHASIL DI HAPUS BERDASARKAN ID </strong>
@@ -431,11 +398,11 @@ class Dashboard extends CI_Controller
             </div>
         </div>
         </div>');
-        redirect('Dashboard/post');
-    }
-    public function logout()
-    {
-        $this->session->sess_destroy();
-        redirect('/Auth');
-    }
+		redirect('Dashboard/post');
+	}
+	public function logout()
+	{
+		$this->session->sess_destroy();
+		redirect('/Auth');
+	}
 }
