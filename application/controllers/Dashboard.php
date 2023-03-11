@@ -321,7 +321,7 @@ class Dashboard extends CI_Controller
 
 
 		$gambar = $_FILES['gambar']['name'];
-		$config['upload_path']          = './assets/upload';
+		$config['upload_path']          = 'assets/upload';
 		$config['allowed_types']        = 'gif|jpg|png|jpeg';
 		$config['overwrite']            = true;
 		$config['max_size']             = 2048;
@@ -366,7 +366,7 @@ class Dashboard extends CI_Controller
 		$config['upload_path']          = './assets/upload/gambar';
 		$config['allowed_types']        = 'gif|jpg|png|jpeg';
 		$config['overwrite']            = true;
-		$config['max_size']             = 2048;
+		// $config['max_size']             = 2048;
 		$this->load->library('upload', $config);
 
 		if ($this->upload->do_upload('gambar')) {

@@ -8,13 +8,53 @@
                 <div class="mb-5 element-animate">
                     <h1 class="mb-2 text-uppercase font-weight-bold">About Us</h1>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
 <!-- END section -->
 
+<section class="site-section pt-3 element-animate">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-header bg-primary ">
+                        <h4 class="text-center text-uppercase font-weight-bold text-white">Visi</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="text-center text-capitalize font-weight-bold">
+                            menjadi sekolah menengah kejuruan yang religius, berakhlak mulia, berbudaya, dan menghasilkan insan yang bertaqwa, berprestasi, profesional, mampu berwira usaha, berdaya saing global serta berjiwa pancasila.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md mt-3">
+                <div class="card">
+                    <div class="card-header bg-primary ">
+                        <h4 class="text-center text-uppercase font-weight-bold text-white">Misi</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="text-capitalize font-weight-bold text-justify">
+                            <ol>
+                                <li>menyelenggarakan kegiatan pendamping keagamaan dalam rangka peningkatyan ketaqwaan.</li>
+                                <li>menyelenggarakan pembelajaran dengan pendekatan teknologi informasi dan komunikasi.</li>
+                                <li>menyelenggarakan sertifikasi kompetensi bagi siswa</li>
+                                <li>Menyelengarakan kegiatan kurikuler dan ekstrakulikuler agar peserta didik memiliki multiskills yang mampu mengembangkan kecakapan hidup (life skils) , berakhlak mulian, kreatif dan inovatif</li>
+                                <li>meningkatkan kualityas dan kuatitas pendidik dan tenaga kependidikan yang memenuhi kualifikasi profesional, sertifikasi kompetensi, kreatif, inovatif, berkarakter dan berbudaya</li>
+                                <li>Meningkatkan fasilitas dan lingkungan belajar yang aman, nyaman, memenuhi standar pendidikan, standar kerja industri secara kualitas dan kuantitas</li>
+                                <li>membangun kemitraan (link and match) dengan lembaga yang relevan</li>
+                            </ol>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <section class="site-section pt-3 element-animate">
     <div class="container">
