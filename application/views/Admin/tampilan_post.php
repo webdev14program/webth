@@ -89,7 +89,7 @@
 
 
 				<div class="form-group">
-					<input type="file" name="gambar" class="form-control-file" name="file" required>
+					<input type="link" name="gambar" class="form-control-file" name="file" required>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
