@@ -85,11 +85,11 @@
 						</div>
 					</div>
 				</div>
-
-
-
 				<div class="form-group">
-					<input type="link" name="gambar" class="form-control-file" name="file" required>
+					<div class="form-group">
+						<label>Nama Kegiatan</label>
+						<input type="text" name="gambar" class="form-control-file" name="file" required>
+					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -317,20 +317,7 @@ class Dashboard extends CI_Controller
 		$nama_kegiatan = $this->input->post('nama_kegiatan');
 		$ringkasan_kegiatan = $this->input->post('ringkasan_kegiatan');
 		$detail_kegiatan = $this->input->post('detail_kegiatan');
-
-
-
-		$gambar = $_FILES['gambar']['name'];
-		$config['upload_path']          = 'assets/upload';
-		$config['allowed_types']        = 'gif|jpg|png|jpeg';
-		$config['overwrite']            = true;
-		$config['max_size']             = 2048;
-		$this->load->library('upload', $config);
-
-		if ($this->upload->do_upload('gambar')) {
-			$gambar = $this->upload->data("file_name");
-			// redirect('Admin/data_testimoni');
-		}
+		$gambar = $this->input->post('gambar');
 
 		$data = array(
 			'id_kegiatan' =>  $id,

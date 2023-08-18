@@ -21,7 +21,7 @@
 				<div class="card">
 					<div class="card-body">
 						<h5 class="text-center">
-							<img src="<?= base_url() ?>assets/upload/<?= $detail_post['gambar'] ?>" style="width: 400px;height: 350px;">
+							<img src="<?= $detail_post['gambar'] ?>" style="width: 400px;height: 350px;">
 						</h5>
 					</div>
 				</div>
