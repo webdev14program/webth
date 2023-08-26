@@ -184,7 +184,7 @@
               <h5 class="text-center text-uppercase font-weight-bold"><?= $row['nama_kegiatan'] ?></h5>
             </div>
             <div class="card-body">
-              <h5 class="text-center"><img src="<?php echo base_url() . 'assets/upload/' . $row['gambar'] ?>" class="card-img-top" style="width: 300px;height: 250px;"></h5>
+              <h5 class="text-center"><img src="<?= $row['gambar'] ?>" class="card-img-top" style="width: 300px;height: 250px;"></h5>
             </div>
           </div>
         </div>
