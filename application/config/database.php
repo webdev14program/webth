@@ -97,7 +97,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '	srv144.niagahoster.com',
+	'hostname' => 'srv144.niagahoster.com',
 	'username' => 'webd1830_webth',
 	'password' => 'Rdss1995*',
 	'database' => 'webd1830_webth',
