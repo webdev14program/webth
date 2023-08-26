@@ -5,7 +5,7 @@
 		</div>
 		<div class="card-body">
 			<h5 class="text-center">
-				<img src="<?= base_url() ?>assets/upload/<?= $post['gambar'] ?>" class="img-fluid" alt="<?= $post['nama_kegiatan'] ?>" style="width: 600px;height:400px">
+				<img src="<?= $post['gambar'] ?>" class="img-fluid" alt="<?= $post['nama_kegiatan'] ?>" style="width: 600px;height:400px">
 			</h5>
 
 			<div class="row">
@@ -19,7 +19,7 @@
 								<?php foreach ($detail_post_gambar as $row) : ?>
 									<div class="col-md mt-2">
 										<div class="card" style="width: 20rem;">
-											<img src="<?= base_url() ?>assets/upload/gambar/<?= $row['gambar'] ?>" class="card-img-top" alt="<?= $row['nama_kegiatan'] ?>">
+											<img src="<?= $row['gambar'] ?>" class="card-img-top" alt="<?= $row['nama_kegiatan'] ?>">
 
 										</div>
 									</div>

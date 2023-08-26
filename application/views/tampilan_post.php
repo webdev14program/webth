@@ -25,7 +25,7 @@
                         <div class="card-header bg-primary">
                             <h5 class="text-center text-uppercase text-white font-weight-bold" style="height: 30px ;"><?= $row['nama_kegiatan'] ?></h5>
                         </div>
-                        <img src="<?= base_url() ?>assets/upload/<?= $row['gambar'] ?>" class="" alt="<?= $row['nama_kegiatan'] ?>">
+                        <img src="<?= $row['gambar'] ?>" class="" alt="<?= $row['nama_kegiatan'] ?>">
                         <div class="card-body">
                             <h6 class="text-justify"><?= $row['ringkasan_kegiatan'] ?>
                                 <h6 class="text-left">
