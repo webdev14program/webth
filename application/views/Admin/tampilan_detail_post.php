@@ -5,7 +5,7 @@
 				<!-- <a class="btn btn-success btn-sm" href="<?= base_url() ?>Dashboard/tambah_jurusan"><i class="fas fa-plus-square"></i> Tambah Jurusan</a> -->
 				<a class="btn btn-danger btn-sm text-white font-weight-bold text-uppercase" href="<?= base_url() ?>Dashboard/post">Kembali</a>
 				<button type="button" class="btn btn-primary btn-sm font-weight-bold text-uppercase" data-toggle="modal" data-target="#exampleModal">
-					Upload Gambar Post
+					Gambar Post
 				</button>
 			</div>
 		</div>
@@ -21,7 +21,7 @@
 				<div class="card">
 					<div class="card-body">
 						<h5 class="text-center">
-							<img src="<?= $detail_post['gambar'] ?>" style="width: 400px;height: 350px;">
+							<img src="<?= $detail_post['gambar'] ?>" alt="gambar" style="width: 400px;height: 350px;">
 						</h5>
 					</div>
 				</div>
@@ -54,10 +54,7 @@
 							<?php foreach ($detail_post_gambar as $row) : ?>
 								<div class="col-md">
 									<div class="card" style="width: 21rem;">
-										<img src="<?= base_url() ?>assets/upload/gambar/<?= $row['gambar'] ?>" class="img-fluid" alt="<?= $row['nama_kegiatan'] ?>">
-									</div>
-									<div class="card-footer text-muted">
-										2 days ago
+										<img src="<?= $row['gambar'] ?>" class="img-fluid" alt="<?= $row['nama_kegiatan'] ?>">
 									</div>
 								</div>
 							<?php endforeach; ?>
@@ -84,13 +81,13 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header bg-primary text-white font-weight-bold">
-				<h5 class="modal-title" id="exampleModalLabel">Upload Gambar Post</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Gambar Post</h5>
 			</div>
 			<div class="modal-body">
 				<?= form_open_multipart('Dashboard/upload_post_gambar'); ?>
 				<input type="text" value="<?= $detail_post['id_kegiatan'] ?>" name="id_kegiatan" hidden>
 				<div class="form-group">
-					<input type="file" name="gambar" class="form-control-file" name="file" required>
+					<input type="text" name="gambar" class="form-control-file" required>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

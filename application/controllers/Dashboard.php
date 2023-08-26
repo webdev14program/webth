@@ -324,7 +324,7 @@ class Dashboard extends CI_Controller
 			'nama_kegiatan' =>  $nama_kegiatan,
 			'ringkasan_kegiatan' => $ringkasan_kegiatan,
 			'detail_kegiatan' => $detail_kegiatan,
-			'gambar' => $gambar,
+			'gambar' => "http://drive.google.com/uc?export=view&id=" . $gambar,
 			'jumlah_gambar' => 0
 		);
 
@@ -349,22 +349,12 @@ class Dashboard extends CI_Controller
 		$this->Model_keamanan->getKeamanan();
 		$id = rand(111111, 999999);
 		$id_kegiatan = $this->input->post('id_kegiatan');
-		$gambar = $_FILES['gambar']['name'];
-		$config['upload_path']          = './assets/upload/gambar';
-		$config['allowed_types']        = 'gif|jpg|png|jpeg';
-		$config['overwrite']            = true;
-		// $config['max_size']             = 2048;
-		$this->load->library('upload', $config);
-
-		if ($this->upload->do_upload('gambar')) {
-			$gambar = $this->upload->data("file_name");
-			// redirect('Admin/data_testimoni');
-		}
+		$gambar = $this->input->post('gambar');
 
 		$data = array(
 			'id_gambar_post' =>  $id,
 			'id_kegiatan' =>  $id_kegiatan,
-			'gambar' => $gambar
+			'gambar' => "http://drive.google.com/uc?export=view&id=" . $gambar,
 		);
 
 		$this->db->insert('post_gambar', $data);

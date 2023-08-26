@@ -39,7 +39,7 @@
 							<td class="text-center text-uppercase font-weight-bold"><?php echo $no++; ?></td>
 							<td class="text-center text-uppercase font-weight-bold"><?= $row['id_kegiatan']; ?></td>
 							<td class=" text-uppercase font-weight-bold"><?= $row['nama_kegiatan']; ?></td>
-							<td class=" text-center text-uppercase font-weight-bold"><?= $row['date']; ?></td>
+							<td class=" text-center text-uppercase font-weight-bold"><?= $row['tanggal']; ?></td>
 							<td>
 								<h5 class="text-center">
 									<a class="btn btn-primary btn-sm text-white" href="<?= base_url() ?>Dashboard/detail_post/<?= $row['id_kegiatan']; ?>"><i class="fas fa-search"></i></a>

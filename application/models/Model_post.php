@@ -14,7 +14,7 @@ class Model_post extends CI_Model
 
 	public function data_admin()
 	{
-		$sql = "SELECT * FROM `post`";
+		$sql = "SELECT id_kegiatan,nama_kegiatan,date(date) AS tanggal FROM `post`;";
 		$query = $this->db->query($sql);
 		return $query->result_array();
 	}
