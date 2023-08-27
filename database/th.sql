@@ -2,8 +2,8 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Aug 26, 2023 at 07:45 AM
+-- Host: 127.0.0.1
+-- Generation Time: Aug 27, 2023 at 11:16 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -448,6 +448,7 @@ CREATE TABLE `post` (
 --
 
 INSERT INTO `post` (`id_kegiatan`, `nama_kegiatan`, `ringkasan_kegiatan`, `detail_kegiatan`, `gambar`, `jumlah_gambar`, `date`) VALUES
+(560914, 'Pembekalan Prakerin 2023', '<p>Sekolah akan mengupayakan terlaksananya program Prakerin SMK ini demi meningkatkan keterampilan siswa di bidangnya.</p>\r\n', '<p>Prakerin atau Praktek Kerja Industri merupakan kegiatan pendidikan, pelatihan, dan pembelajaran bagi siswa SMK (Sekolah Menengah Kejuruan) yang dilakukan di dunia usaha atau dunia industri yang berkaitan dengan kompetensi siswa sesuai bidang yang digelutinya. Pada umumnya, sekolah akan mengupayakan terlaksananya program Prakerin SMK ini demi meningkatkan keterampilan siswa di bidangnya.</p>\r\n\r\n<p>Dalam program ini, para siswa diberikan bekal ilmu pengetahuan dasar supaya meminimalisir kendala saat penerapan bekerja. Program ini dilaksanakan agar siswa lebih siap untuk bekerja di lapangan dan juga dapat mempraktikkan teori yang sudah dipelajari di sekolah. Dengan begitu, ketika lulus nanti, siswa dapat beradaptasi lebih cepat dengan dunia kerja.&nbsp;</p>\r\n\r\n<p>Prakerin SMK ini merupakan upaya sekolah untuk meningkatkan mutu siswa SMK sehingga dapat menghasilkan lulusan yang mampu menjalani pekerjaan sesuai dengan bidangnya dan memasuki dunia kerja yang persaingannya cukup ketat. Beberapa sekolah sudah mewajibkan program prakerin bagi para siswa dalam jangka waktu tertentu.&nbsp;</p>\r\n\r\n<p>Pelaksanaan program prakerin ini didasari oleh Peraturan Menteri Perindustrian Nomor 3 Tahun 2017 tentang Pedoman Pembinaan dan Pengembangan Sekolah Menengah Kejuruan Berbasis Kompetensi yang&nbsp;<em>Link and Match&nbsp;</em>dengan Industri yang memuat klausul tentang Praktek Kerja Industri berbunyi, &ldquo;Perusahaan Industri dan/atau Perusahaan Kawasan Industri memfasilitasi Praktek Kerja Industri untuk siswa dan Pemagangan Industri untuk guru Bidang Studi Produktif.&rdquo;</p>\r\n\r\n<p>Hal ini juga didukung oleh Keputusan Menteri Pendidikan dan Kebudayaan No.323/u/1997 UU Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional yang menyebutkan, &ldquo;Pendidikan adalah usaha sadar dan terencana untuk mewujudkan suasana belajar dan proses pembelajaran agar peserta didik secara aktif mengembangkan potensi dirinya untuk memiliki kekuatan spiritual, agama, pengendalian diri, kepribadian, kecerdasan, akhlak mulia, serta keterampilan yang diperlukan dirinya, masyarakat, bangsa, dan negara.&rdquo;</p>\r\n\r\n<p>Setelah memahami pengertian di atas, ada baiknya Anda juga mengetahui manfaat prakerin bagi siswa, khususnya bagi Anda yang akan menjalani prakerin dalam waktu dekat. Dengan mengetahui manfaat prakerin, diharapkan Anda dapat melaksanakan prakerin dengan maksimal. Berikut ini merupakan manfaat dari prakerin bagi siswa SMK.</p>\r\n\r\n<div id=\"gtx-trans\" style=\"position: absolute; left: 233px; top: 141.984px;\">\r\n<div class=\"gtx-trans-icon\">&nbsp;</div>\r\n</div>\r\n', 'http://drive.google.com/uc?export=view&id=1qJVQCEkQeX1PAqJDDLTIpRFwrwLULVJE', 0, '2023-08-27 08:40:58'),
 (933927, 'JUARA UMUM 3 DI KEJUARAAN SKI-CUP II', '<p>SELAMAT ATAS JUARA YANG TELAH MEMENANGKAN KEJUARAAN SKI-CUP II, SEMOGA DAPAT MEMBANGGAKAN SMK TUNAS HARAPAN DI KESEMPATAN SELANJUTNYA!!!</p>\r\n', '<p>BERIKUT INI NAMA ATLET DAN JUARA YANG DI DAPAT OLEH&nbsp; MURID SMK TUNAS HARAPAN DALAM KEJUARAAN SILAT SKI-CUP II ;</p>\r\n\r\n<p>1. AULIA FITRIANI JUARA 1</p>\r\n\r\n<p>2. HARMELIA NAISA PUTRI JUARA 1</p>\r\n\r\n<p>3. MUHAMMAD RIZKY JUARA 1</p>\r\n\r\n<p>4. ERVAN HIDAYAT JUARA 1</p>\r\n\r\n<p>5. FAREL AFITATUTSADID A JUARA 1</p>\r\n\r\n<p>6. LAELI SYIFA AYU NURINSANI JUARA 2</p>\r\n\r\n<p>7. JEYAN SABILI JUARA 2</p>\r\n\r\n<p>8. MUHAMMAD ILHAM JUARA 2</p>\r\n', 'http://drive.google.com/uc?export=view&id=1ypGTuVdoYDkHeI2igITRLP5AH2Qpeifv', 0, '2023-08-26 04:27:30');
 
 -- --------------------------------------------------------
@@ -467,9 +468,24 @@ CREATE TABLE `post_gambar` (
 --
 
 INSERT INTO `post_gambar` (`id_gambar_post`, `id_kegiatan`, `gambar`) VALUES
-(322315, 933927, 'http://drive.google.com/uc?export=view&id=12C6bUK6SOp7m3BKeE4gHIpuMmxo5cTOI'),
-(400370, 933927, 'http://drive.google.com/uc?export=view&id=1bzoLcEtdr_9duQgtxAEQSQZZxTN0QkfG'),
-(568689, 933927, 'http://drive.google.com/uc?export=view&id=1yKcJL05gvC_WNhMDZuWteXENr4-bxIe_');
+(1012913, 560914, 'http://drive.google.com/uc?export=view&id=128oitiGdsxx7CEkVdbWi1zEdmiZ8mMC7'),
+(1023475, 560914, 'http://drive.google.com/uc?export=view&id=156Je9_e9AvXFij6f0f0dzpK1gcIMtWXR'),
+(1033004, 560914, 'http://drive.google.com/uc?export=view&id=17iLb0c_kwuW-SEOhxX-TiHtWaaei7Q4K'),
+(1048771, 560914, 'http://drive.google.com/uc?export=view&id=1N52a6MsYNQ45MwO3zjSnuBgQ6FLhz_qD'),
+(1052783, 560914, 'http://drive.google.com/uc?export=view&id=1NlaLzuxjiPKXaKqWa1UVTrYHociq7R8f'),
+(1067190, 560914, 'http://drive.google.com/uc?export=view&id=1PxbywEPLD1yisdSt7hA_FJp6McJaVLkN'),
+(1073614, 560914, 'http://drive.google.com/uc?export=view&id=1TuYdvQGMsNVV-jpB64YZFuX1-iBh3IRA'),
+(1082573, 560914, 'http://drive.google.com/uc?export=view&id=1Tw9prk2TjjiCwgRVaY1pRcVqgqSj69OU'),
+(1096846, 560914, 'http://drive.google.com/uc?export=view&id=1U7Gvy82B4NZv3CJAVxheeOAUx7M7qSMO'),
+(1106688, 560914, 'http://drive.google.com/uc?export=view&id=1W_AGHco7MYHcOhnfQOVNbeZ-EocQMJpJ'),
+(1118979, 560914, 'http://drive.google.com/uc?export=view&id=1c6XrJrayDooQJBBivvZj9AkYCq6v3HSr'),
+(1129111, 560914, 'http://drive.google.com/uc?export=view&id=1ptbGD-fdugrPiEYdnBZYQsYezz3kVh3o'),
+(5907056, 933927, 'http://drive.google.com/uc?export=view&id=12C6bUK6SOp7m3BKeE4gHIpuMmxo5cTOI'),
+(6610246, 933927, 'http://drive.google.com/uc?export=view&id=17MNIQ3Mg8M3sh7HJt2bbNaepl4hCZrYS'),
+(7057797, 933927, 'http://drive.google.com/uc?export=view&id=1yKcJL05gvC_WNhMDZuWteXENr4-bxIe_'),
+(7159222, 933927, 'http://drive.google.com/uc?export=view&id=1IthN-C2t9k0MhvNqGNf09FF14cb0UVMm'),
+(7706368, 933927, 'http://drive.google.com/uc?export=view&id=1Eb8FF_4S6q2DfQJBRyL4NkeQRXPgJ6NA'),
+(8062120, 933927, 'http://drive.google.com/uc?export=view&id=1bzoLcEtdr_9duQgtxAEQSQZZxTN0QkfG');
 
 -- --------------------------------------------------------
 
@@ -617,7 +633,7 @@ ALTER TABLE `jurusan`
 -- AUTO_INCREMENT for table `kelas`
 --
 ALTER TABLE `kelas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3039925;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4041027;
 
 --
 -- AUTO_INCREMENT for table `post`
