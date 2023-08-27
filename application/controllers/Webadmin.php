@@ -6,8 +6,7 @@ class Webadmin extends CI_Controller
 
 	public function index()
 	{
-		$isi['version'] = 'Release Candidate V2.0';
-		$this->load->view('Admin/tampilan_login', $isi);
+		$this->load->view('Admin/tampilan_login');
 	}
 
 	public function proses_login()
@@ -34,7 +33,7 @@ class Webadmin extends CI_Controller
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>');
-				redirect('Auth');
+				redirect('Webadmin ');
 			}
 		} else {
 			$this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -42,8 +41,8 @@ class Webadmin extends CI_Controller
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
-                  </div>');
-			redirect('Auth');
+                  </div');
+			redirect('Webadmin ');
 		}
 	}
 }
