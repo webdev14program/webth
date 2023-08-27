@@ -39,38 +39,7 @@
             <?php endforeach; ?>
         </div>
 
-        <!-- <div class="row mt-4 mb-4">
-                <div class="col-md">
-                    <div class="card" style="width: 18rem;">
-                        <img src="<?= base_url() ?>assets/upload/<?= $row['gambar'] ?>" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header bg-primary">
-                            <h5 class="text-center text-uppercase text-white font-weight-bold"><?= $row['nama_kegiatan'] ?></h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <h5 class="text-center">
-                                        <img src="<?= base_url() ?>assets/upload/<?= $row['gambar'] ?>" style="width: 320px;height: 250px;">
-                                    </h5>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="overflow-auto">
-                                        <p class="text-justify overflow-auto"><?= $row['detail_kegiatan'] ?></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-footer text-muted">
-                            <p class=" text-uppercase font-weight-bold text-center"><?= $row['date'] ?></p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+
 
 </section>
 <!-- END section -->
