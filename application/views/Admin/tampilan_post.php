@@ -24,7 +24,7 @@
 					<tr class="text-center text-uppercase font-weight-bold">
 						<th>#</th>
 						<th>ID POST</th>
-						<th style="">Nama Kegiatan</th>
+						<th>Nama Kegiatan</th>
 						<th>detail</th>
 						<th>Aksi</th>
 

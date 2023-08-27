@@ -345,20 +345,74 @@ class Dashboard extends CI_Controller
 	public function upload_post_gambar()
 	{
 
+		if ($this->input->post('submit', TRUE) == 'upload') {
+			$config['upload_path']      = './temp_doc/';
+			$config['allowed_types']    = 'xlsx|xls';
+			$config['file_name']        = 'doc' . time();
 
-		$this->Model_keamanan->getKeamanan();
-		$id = rand(111111, 999999);
-		$id_kegiatan = $this->input->post('id_kegiatan');
-		$gambar = $this->input->post('gambar');
+			$this->load->library('upload', $config);
 
-		$data = array(
-			'id_gambar_post' =>  $id,
-			'id_kegiatan' =>  $id_kegiatan,
-			'gambar' => "http://drive.google.com/uc?export=view&id=" . $gambar,
-		);
+			if ($this->upload->do_upload('excel')) {
+				$file   = $this->upload->data();
 
-		$this->db->insert('post_gambar', $data);
-		redirect('Dashboard/detail_post/' . $id_kegiatan);
+				$reader = ReaderEntityFactory::createXLSXReader();
+				$reader->open('temp_doc/' . $file['file_name']);
+
+
+				foreach ($reader->getSheetIterator() as $sheet) {
+					$numRow = 1;
+					$save   = array();
+					foreach ($sheet->getRowIterator() as $row) {
+
+						if ($numRow > 1) {
+
+							$cells = $row->getCells();
+
+							$data = array(
+								'id_gambar_post '       => $cells[0],
+								'id_kegiatan'     => $cells[1],
+								'gambar'    => $cells[2],
+
+							);
+							array_push($save, $data);
+						}
+						$numRow++;
+					}
+					$this->Model_post->simpan($save);
+					$reader->close();
+					unlink('temp_doc/' . $file['file_name']);
+					$this->session->set_flashdata('pesan', '<div class="row">
+            <div class="col-md mt-2">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>Data Gambar Berhasil  Berhasil Di Upload</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+            </div>
+            </div>');
+					redirect('Dashboard/detail_post/' . $id_kegiatan);
+				}
+			} else {
+				echo "Error :" . $this->upload->display_errors();
+			}
+		}
+
+
+		// $this->Model_keamanan->getKeamanan();
+		// $id = rand(111111, 999999);
+		// $id_kegiatan = $this->input->post('id_kegiatan');
+		// $gambar = $this->input->post('gambar');
+
+		// $data = array(
+		// 	'id_gambar_post' =>  $id,
+		// 	'id_kegiatan' =>  $id_kegiatan,
+		// 	'gambar' => "http://drive.google.com/uc?export=view&id=" . $gambar,
+		// );
+
+		// $this->db->insert('post_gambar', $data);
+		// redirect('Dashboard/detail_post/' . $id_kegiatan);
 	}
 
 	public function hapus_post($id_kegiatan)

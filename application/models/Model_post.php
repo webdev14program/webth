@@ -63,4 +63,13 @@ limit 3;";
 		$query = $this->db->query($sql);
 		return $query->result_array();
 	}
+
+	function simpan($data = array())
+	{
+		$jumlah = count($data);
+
+		if ($jumlah > 0) {
+			$this->db->insert_batch('post_gambar', $data);
+		}
+	}
 }

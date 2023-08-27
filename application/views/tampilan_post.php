@@ -31,7 +31,6 @@
                                 <h6 class="text-left">
                                     <a href="<?= base_url() ?>Post/detail_post/<?= $row['id_kegiatan'] ?>">Read More</a>
                                 </h6>
-                                <h6 class="text-right"><?= $row['date'] ?></h6>
                             </h6>
                         </div>
                     </div>

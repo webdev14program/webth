@@ -51,12 +51,16 @@
 					</div>
 					<div class="card-body">
 						<div class="row">
+
 							<?php foreach ($detail_post_gambar as $row) : ?>
-								<div class="col-md">
-									<div class="card" style="width: 21rem;">
-										<img src="<?= $row['gambar'] ?>" class="img-fluid" alt="<?= $row['nama_kegiatan'] ?>">
+								<h5 class="text-center">
+									<div class="col-md">
+										<div class="card" style="width: 22rem;">
+											<img src="<?= $row['gambar'] ?>" class="img-fluid" alt="<?= $row['nama_kegiatan'] ?>">
+										</div>
 									</div>
-								</div>
+								</h5>
+
 							<?php endforeach; ?>
 						</div>
 					</div>
@@ -87,7 +91,7 @@
 				<?= form_open_multipart('Dashboard/upload_post_gambar'); ?>
 				<input type="text" value="<?= $detail_post['id_kegiatan'] ?>" name="id_kegiatan" hidden>
 				<div class="form-group">
-					<input type="text" name="gambar" class="form-control-file" required>
+					<input type="file" name="excel" class="form-control-file" name="file" required accept=".xlsx">
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
