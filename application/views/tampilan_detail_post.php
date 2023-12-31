@@ -17,11 +17,10 @@
 						<div class="card-body">
 							<div class="row">
 								<?php foreach ($detail_post_gambar as $row) : ?>
-									<div class="col-md mt-2">
-										<div class="card" style="width: 20rem;">
-											<img src="<?= $row['gambar'] ?>" class="card-img-top" alt="<?= $row['nama_kegiatan'] ?>">
+									<div class="col-md mt-2 d-flex align-items-center justify-content-center mb-4">
 
-										</div>
+										<h5 class="text-center mt-2"><img src="<?= $row['gambar'] ?>" class="card-img-top" alt="<?= $row['nama_kegiatan'] ?>" style="width: 250px;height: 200px;"></h5>
+
 									</div>
 								<?php endforeach; ?>
 							</div>

@@ -19,19 +19,19 @@
     <div class="container" style="margin-top: -80px;">
         <div class="row">
             <?php foreach ($post as $row) : ?>
-
-                <div class="col-md">
-                    <div class="card mt-2" style="width: 350px;height:500px">
-                        <div class="card-header bg-primary">
-                            <h5 class="text-center text-uppercase text-white font-weight-bold" style="height: 30px ;"><?= $row['nama_kegiatan'] ?></h5>
+                <div class="col-md mt-2 d-flex align-items-center justify-content-center mb-3">
+                    <div class="card" style="width: 21rem;">
+                        <div class="card-body" style="width: 300px;height:500px">
+                            <h5 class="text-uppercase text-center mb-4"><?= $row['nama_kegiatan'] ?> </h5>
+                            <h5 class="text-center mt-2">
+                                <img src="<?= $row['gambar'] ?>" class="card-img-top" style="width: 285px;height: 235px;">
+                            </h5>
+                            <h6 class="text-justify"><?= $row['ringkasan_kegiatan'] ?></h6>
                         </div>
-                        <img src="<?= $row['gambar'] ?>" class="" alt="<?= $row['nama_kegiatan'] ?>">
-                        <div class="card-body">
-                            <h6 class="text-justify"><?= $row['ringkasan_kegiatan'] ?>
-                                <h6 class="text-left">
-                                    <a href="<?= base_url() ?>Post/detail_post/<?= $row['id_kegiatan'] ?>">Read More</a>
-                                </h6>
-                            </h6>
+                        <div class="card-footer text-muted">
+                            <h5 class="text-center">
+                                <a class="btn btn-primary btn-sm text-uppercase font-weight-bold" href="<?= base_url() ?>Post/detail_post/<?= $row['id_kegiatan'] ?>">Read More</a>
+                            </h5>
                         </div>
                     </div>
                 </div>
