@@ -33,7 +33,7 @@ class Webadmin extends CI_Controller
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>');
-				redirect('Webadmin ');
+				redirect('Webadmin');
 			}
 		} else {
 			$this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -42,7 +42,7 @@ class Webadmin extends CI_Controller
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div');
-			redirect('Webadmin ');
+			redirect('Webadmin');
 		}
 	}
 }

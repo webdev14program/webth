@@ -324,7 +324,7 @@ class Dashboard extends CI_Controller
 			'nama_kegiatan' =>  $nama_kegiatan,
 			'ringkasan_kegiatan' => $ringkasan_kegiatan,
 			'detail_kegiatan' => $detail_kegiatan,
-			'gambar' => "http://drive.google.com/uc?export=view&id=" . $gambar,
+			'gambar' => "https://drive.google.com/uc?export=view&id=" . $gambar,
 			'jumlah_gambar' => 0
 		);
 
