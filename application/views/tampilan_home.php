@@ -7,7 +7,7 @@
 
         <div class="mb-5 element-animate">
           <div class="block-17">
-            <h1 class="text-center mb-1 font-weight-bold text-uppercase">selamat datang <br> di <br>SMK Tunas Harapan </h1>
+            <h1 class="text-center mb-1 font-weight-bold text-uppercase">selamat datang <br> di <br>SMK Tunas Harapan jakarta barat</h1>
           </div>
         </div>
 
@@ -32,10 +32,10 @@
             <h2 class="text-center">Welcome to SMK Tunas Harapan Jakarta Barat</h2>
           </div>
           <div class="text mb-5">
-            <p class="text-justify">SMK Tunas Harapan berdiri sejak tahun 1990 dahulu bernama SMEA dimana jurusan keahlian (setara sekolah menengah) hanya Bisnis Management ( Akuntantansi, Pemasaran dan Administrasi perkantoran).
-              sejak tahun 2013 terdapat jurusan baru dari bidang Teknologi (Teknik Komputer dan Jaringan). Dan sejak tahun 2020 terdapat jurusan baru dari bidang Seni dan Ekonomi Kreatif (Desain Komunikasi Visual). Berbagai prestasi dari Bidang Olahraga, Kesenian, Sastra hingga Mata Pelajaran Produktif(Lomba Kompetensi Siswa) sudah diraih oleh SMK Tunas Harapan.
-              Prestasi ini bukan akhir tetapi melainkan awal untuk menciptakan Teknis Pendidikan berbasis Praktek dan Kerja Industri (sesuai Jurusan) yang inovatif dan kreatif. SMK Tunas Harapan sudah menjalankan
-              Program Teaching Factory, Bursa Kerja dan Lembaga Sertifikasi Profesi berstandart BNSP. Program ini dikhususkan untuk meningkatkan kualitas kegiatan pembelajaran dan pencarian lapangan kerja berbasis jurusan masing - masing.</p>
+            <p class="text-justify">SMK Tunas Harapan berdiri sejak tahun 1990 dahulu bernama SMEA dimana jurusan keahlian (setara sekolah menengah) hanya Bisnis Management ( Akuntantansi, Pemasaran dan Administrasi perkantoran). sejak tahun 2013 terdapat jurusan baru dari bidang Teknologi (Teknik Komputer dan Jaringan). Dan sejak tahun 2020 terdapat jurusan baru dari bidang Seni dan Ekonomi Kreatif (Desain Komunikasi Visual). Berbagai prestasi dari Bidang Olahraga, Kesenian, Sastra hingga Mata Pelajaran Produktif(Lomba Kompetensi Siswa) sudah diraih oleh SMK Tunas Harapan. Prestasi ini bukan akhir tetapi melainkan awal untuk menciptakan Teknis Pendidikan berbasis Praktek dan Kerja Industri (sesuai Jurusan) yang inovatif dan kreatif. SMK Tunas Harapan sudah menjalankan Program Teaching Factory, Bursa Kerja dan Lembaga Sertifikasi Profesi berstandart BNSP. Program ini dikhususkan untuk meningkatkan kualitas kegiatan pembelajaran dan pencarian lapangan kerja berbasis jurusan masing - masing.
+              <br>
+            <p class="text-center text-capitalize">pada tahun 2024 smk tunas harapan jakarta barat sudah mendapatkan lisensi sekolah unggulan dari keputusan direktur jendral pendidikan vokasi kementrian pendidikan , kebudayaan, riset dan teknologi dengan nomor 74/D/O/2024</p>
+            </p>
           </div>
 
 

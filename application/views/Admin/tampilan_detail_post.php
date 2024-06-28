@@ -21,7 +21,7 @@
 				<div class="card">
 					<div class="card-body">
 						<h5 class="text-center">
-							<img src="<?= $detail_post['gambar'] ?>" alt="gambar" style="width: 400px;height: 350px;">
+							<img class="img-fluid" src="<?= $detail_post['gambar'] ?>" alt="gambar" style="width: 400px;height: 300px;">
 						</h5>
 					</div>
 				</div>
@@ -65,7 +65,7 @@
 									<div class="card" style="width: 20rem;">
 										<div class="card-body">
 											<h5 class="text-center mt-2">
-												<img src="<?= $row['gambar'] ?>" class="card-img-top" alt="" style="width: 300px;height: 250px;">
+												<img src="<?= $row['gambar'] ?>" class="card-img-top" alt="" style="width: 250px;height: 200px;">
 											</h5>
 										</div>
 									</div>
@@ -103,8 +103,8 @@
 					<input type="file" name="excel" class="form-control-file" name="file" required accept=".xlsx">
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="submit" name="submit" value="upload" class="btn btn-primary">Upload</button>
+					<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+					<button type="submit" name="submit" value="upload" class="btn btn-primary btn-sm">Upload</button>
 				</div>
 				<?= form_close(); ?>
 			</div>

@@ -324,8 +324,8 @@ class Dashboard extends CI_Controller
 			'nama_kegiatan' =>  $nama_kegiatan,
 			'ringkasan_kegiatan' => $ringkasan_kegiatan,
 			'detail_kegiatan' => $detail_kegiatan,
-			'gambar' => "https://drive.google.com/uc?export=view&id=" . $gambar,
-			'jumlah_gambar' => 0
+			'gambar' => $gambar,
+
 		);
 
 		$this->db->insert('post', $data);
@@ -419,6 +419,11 @@ class Dashboard extends CI_Controller
 	{
 		$this->db->where('id_kegiatan', $id_kegiatan);
 		$this->db->delete('post');
+
+		$this->db->where('id_kegiatan', $id_kegiatan);
+		$this->db->delete('post_gambar');
+
+
 		$this->session->set_flashdata('info', '<div class="row">
         <div class="col-md mt-2">
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -434,6 +439,6 @@ class Dashboard extends CI_Controller
 	public function logout()
 	{
 		$this->session->sess_destroy();
-		redirect('/Auth');
+		redirect('/Webadmin');
 	}
 }
