@@ -21,7 +21,7 @@
 				<div class="card">
 					<div class="card-body">
 						<h5 class="text-center">
-							<img class="img-fluid" src="<?= $detail_post['gambar'] ?>" alt="gambar" style="width: 400px;height: 300px;">
+							<img class="img-fluid" src="<?= $detail_post['gambar'] ?>" alt="gambar" style="width: 350px;height: 250px;">
 						</h5>
 					</div>
 				</div>
@@ -65,7 +65,7 @@
 									<div class="card" style="width: 20rem;">
 										<div class="card-body">
 											<h5 class="text-center mt-2">
-												<img src="<?= $row['gambar'] ?>" class="card-img-top" alt="" style="width: 250px;height: 200px;">
+												<img src="<?= $row['gambar'] ?>" class="card-img-top" alt="" style="width: 200px;height: 150px;">
 											</h5>
 										</div>
 									</div>

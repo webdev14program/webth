@@ -7,7 +7,7 @@
 
         <div class="mb-5 element-animate">
           <div class="block-17">
-            <h1 class="text-center mb-1 font-weight-bold text-uppercase">selamat datang <br> di <br>SMK Tunas Harapan jakarta barat</h1>
+            <h1 class="text-center mb-1 font-weight-bold text-uppercase">SMK Tunas Harapan jakarta barat <br> (pusat keunggulan)</h1>
           </div>
         </div>
 

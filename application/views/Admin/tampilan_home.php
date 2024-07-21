@@ -2,7 +2,7 @@
     <div class="col-md">
         <div class="card bg-primary">
             <div class="card-body">
-                <h5 class="text-white font-weight-bold text-uppercase">Admin smk tunas harapan (<?= $version ?>)</h5>
+                <h5 class="text-white font-weight-bold text-uppercase">Admin smk tunas harapan </h5>
             </div>
         </div>
     </div>
@@ -87,7 +87,7 @@
                     <tbody>
                         <tr>
                             <td>Versi Aplikasi </td>
-                            <td class="text-uppercase">: Admin SMK tunas harapan (<?= $version ?>)</td>
+                            <td class="text-uppercase">: Admin SMK tunas harapa</td>
                         </tr>
                         <tr>
                             <td>Versi PHP </td>
